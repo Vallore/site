@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,9 +9,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">Vallore Joias e Semijoias</h1>
-
-        <p className="description">API em desenvolvimento</p>
+        <Image
+          src="/logo.jpg"
+          width={200}
+          height={190}
+          alt="Vallore Joias e Semijoias de Luxo"
+        />
+        <p className="description">Em teste. Nova atualização em 24h.</p>
       </main>
 
       <footer>
