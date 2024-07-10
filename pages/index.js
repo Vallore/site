@@ -391,9 +391,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-
-             {/* Box 4 */}
+                 {/* Box 4 */}
              <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
                     <img src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover" />
                     <div className="p-4 bg-gray-100">
@@ -425,6 +423,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            
             {/* PRODUTOS POR CATEGORIA */}
             <div className="text-center mb-8 mt-10">
                 <h2 className="text-2xl font-bold text-black">VEJA NOSSOS PRODUTOS POR CATEGORIA</h2>
@@ -571,6 +572,7 @@ const Home = () => {
                 </div>
             </div>
             </div>
+
 
     
   );
