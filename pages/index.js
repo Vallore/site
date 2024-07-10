@@ -1,178 +1,283 @@
 import Head from "next/head";
-import Image from "next/image";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="container">
+    <div className="bg-gray-100">
       <Head>
-        <title>Vallore Joias e Semijoias</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vallore Joias</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />{" "}
+        {/* Adicione seu arquivo CSS personalizado aqui */}
       </Head>
 
-      <main>
-        <Image
-          src="/logo.jpg"
-          width={200}
-          height={190}
-          alt="Vallore Joias e Semijoias de Luxo"
+      {/* Cabeçalho Superior */}
+      <div className="bg-yellow-300 text-black text-center py-3 flex justify-center">
+        <p className="font-bold mr-4">
+          ATACADO: Pedido Mínimo R$500 + Frete Grátis!
+        </p>
+        <p className="ml-20 font-bold">
+          Confira nossas ofertas para o Dia dos Namorados
+        </p>
+      </div>
+
+      <div className="flex justify-around">
+        {/* Cabeçalho meio */}
+        <div className="flex-col space-y-4 mt-10">
+          {/* Divisão para o WhatsApp */}
+          <div className="flex items-center space-x-4">
+            {/* Ícone do WhatsApp */}
+            <a
+              href="https://api.whatsapp.com/send?phone=553533333333"
+              target="_blank"
+              className="text-yellow-300"
+            >
+              <i className="fab fa-whatsapp fa-2x"></i>
+            </a>
+            {/* Texto "WhatsApp: (35) 3333-3333" */}
+            <div>
+              <p className="text-gray-800 font-bold">
+                WhatsApp: (35) 3333-3333
+              </p>
+            </div>
+          </div>
+
+          {/* Divisão para o Contato */}
+          <div className="flex items-center space-x-4">
+            <i className="fas fa-phone-alt fa-2x text-yellow-300"></i>
+            <div>
+              <p className="text-gray-800 font-bold">Contato: (35) 3333-3333</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img
+            src="/logo.png"
+            alt="Logo da empresa"
+            className="w-32 h-32 mt-10"
+          />
+        </div>
+
+        {/* Divisão para o Busca e outros ícones */}
+        <div className="flex items-center space-x-10">
+          {/* Ícone de busca */}
+          <p className="font-bold">
+            Busca <i className="fas fa-search fa-2x text-yellow-300"></i>
+          </p>
+          {/* Ícone de usuário */}
+          <i className="fas fa-user fa-2x text-yellow-300"></i>
+          {/* Ícone de compras */}
+          <i className="fas fa-shopping-bag fa-2x text-yellow-300"></i>
+        </div>
+      </div>
+
+      {/* MENU NAV */}
+      <div className="pt-6 relative">
+        <div className="max-w-screen-md mx-auto">
+          <div className="shadow-lg inset-x-0 top-0 h-px bg-gray-300"></div>
+        </div>
+
+        <div className="flex justify-center space-x-10 p-5">
+          {/* Item de menu "Lançamentos" */}
+          <div className="relative">
+            <a
+              href="#"
+              className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >
+              Lançamentos
+            </a>
+            {/* Submenu "Lançamentos" */}
+            <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Ver todos
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Novidades
+              </a>
+            </div>
+          </div>
+
+          {/* Item de menu "Brincos" */}
+          <div className="relative">
+            <a
+              href="#"
+              className="block py-3 px-4 text-lg font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >
+              Brincos
+            </a>
+            {/* Submenu "Brincos" */}
+            <div className="absolute hidden bg-white shadow-xl mt-2 w-48 submenu">
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Argolas
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Pendentes
+              </a>
+            </div>
+          </div>
+
+          {/* Item de menu "Anéis" */}
+          <div className="relative">
+            <a
+              href="#"
+              className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >
+              Anéis
+            </a>
+            {/* Submenu "Anéis" */}
+            <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Solitários
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Aparadores
+              </a>
+            </div>
+          </div>
+
+          {/* Item de menu "Colares" */}
+          <div className="relative">
+            <a
+              href="#"
+              className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >
+              Colares
+            </a>
+            {/* Submenu "Colares" */}
+            <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Chokers
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Longos
+              </a>
+            </div>
+          </div>
+
+          {/* Item de menu "Pulseiras" */}
+          <div className="relative">
+            <a
+              href="#"
+              className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >
+              Pulseiras
+            </a>
+            {/* Submenu "Pulseiras" */}
+            <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Pulseiras de Prata
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Pulseiras de Ouro
+              </a>
+            </div>
+          </div>
+
+          {/* Item de menu "Conjuntos" */}
+          <div className="relative">
+            <a
+              href="#"
+              className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >
+              Conjuntos
+            </a>
+            {/* Submenu "Conjuntos" */}
+            <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Conjuntos de Pedras
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Conjuntos de Diamantes
+              </a>
+            </div>
+          </div>
+
+          {/* Item de menu "+Categorias" */}
+          <div className="relative">
+            <a
+              href="#"
+              className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >
+              +Categorias
+            </a>
+            {/* Submenu "+Categorias" */}
+            <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Categorias Extras 1
+              </a>
+              <a
+                href="#"
+                className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >
+                Categorias Extras 2
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="shadow-xl inset-x-0 top-2 h-px bg-yellow-300 pb-1"></div>
+        <img
+          src="/slider 1.png"
+          alt="Imagem de uma mulher usando joias Vallore, como brinco e colar"
+          className="w-full object-cover"
         />
-        <p className="description">Em teste. Nova atualização em 24h.</p>
-      </main>
-
-      <footer>
-        <a
-          href="https://rixxer.com.br"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by Rixxer
-        </a>
-      </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 3em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+      </div>
     </div>
   );
-}
+};
+
+export default Home;
