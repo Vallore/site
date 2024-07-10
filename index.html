@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link para seu arquivo CSS personalizado -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link para a fonte Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link para o Font Awesome -->
+    <title>Vallore Joias</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Cabeçalho Superior -->
+    <div class="bg-yellow-300 text-black text-center py-3 flex justify-center">
+      <p class="font-bold mr-4">ATACADO: Pedido Mínimo R$500 + Frete Grátis!</p>
+      <p class="ml-20 font-bold">
+        Confira nossas ofertas para o Dia dos Namorados
+      </p>
+    </div>
+
+    <div class="flex justify-around">
+      <!--Cabeçalho meio-->
+      <div class="flex-col space-y-4 mt-10">
+        <!-- Divisão para o WhatsApp -->
+        <div class="flex items-center space-x-4">
+          <!-- Ícone do WhatsApp -->
+          <a
+            href="https://api.whatsapp.com/send?phone=553533333333"
+            target="_blank"
+            class="text-yellow-300"
+          >
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </a>
+          <!-- Texto "WhatsApp: (35) 3333-3333" -->
+          <div>
+            <p class="text-gray-800 font-bold">WhatsApp: (35) 3333-3333</p>
+          </div>
+        </div>
+
+        <!-- Divisão para o Contato -->
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-phone-alt fa-2x text-yellow-300"></i>
+          <div>
+            <p class="text-gray-800 font-bold">Contato: (35) 3333-3333</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          src="/public/logo.png"
+          alt="Logo da empresa"
+          class="w-32 h-32 mt-10"
+        />
+      </div>
+      <!-- Divisão para o Busca e outros ícones -->
+      <div class="flex items-center space-x-10">
+        <!-- Ícone de busca -->
+        <p class="font-bold">
+          Busca <i class="fas fa-search fa-2x text-yellow-300"></i>
+        </p>
+        <!-- Ícone de usuário -->
+        <i class="fas fa-user fa-2x text-yellow-300"></i>
+        <!-- Ícone de compras -->
+        <i class="fas fa-shopping-bag fa-2x text-yellow-300"></i>
+      </div>
+    </div>
+    <!--MENU NAV-->
+    <div class="pt-6 relative">
+      <div class="max-w-screen-md mx-auto">
+        <div class="shadow-lg inset-x-0 top-0 h-px bg-gray-300"></div>
+      </div>
+      <div class="flex justify-center space-x-10 p-5">
+        <!-- Item de menu "Lançamentos" -->
+        <div class="relative">
+          <a
+            href="#"
+            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >Lançamentos</a
+          >
+          <!-- Submenu "Lançamentos" -->
+          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Ver todos</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Novidades</a
+            >
+          </div>
+        </div>
+
+        <!-- Item de menu "Brincos" -->
+        <div class="relative">
+          <a
+            href="#"
+            class="block py-3 px-4 text-lg font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >Brincos</a
+          >
+          <!-- Submenu "Brincos" -->
+          <div class="absolute hidden bg-white shadow-xl mt-2 w-48 submenu">
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Argolas</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Pendentes</a
+            >
+          </div>
+        </div>
+
+        <!-- Item de menu "Anéis" -->
+        <div class="relative">
+          <a
+            href="#"
+            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >Anéis</a
+          >
+          <!-- Submenu "Anéis" -->
+          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Solitários</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Aparadores</a
+            >
+          </div>
+        </div>
+
+        <!-- Item de menu "Colares" -->
+        <div class="relative">
+          <a
+            href="#"
+            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >Colares</a
+          >
+          <!-- Submenu "Colares" -->
+          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Chokers</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Longos</a
+            >
+          </div>
+        </div>
+
+        <!-- Item de menu "Pulseiras" -->
+        <div class="relative">
+          <a
+            href="#"
+            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >Pulseiras</a
+          >
+          <!-- Submenu "Pulseiras" -->
+          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Pulseiras de Prata</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Pulseiras de Ouro</a
+            >
+          </div>
+        </div>
+
+        <!-- Item de menu "Conjuntos" -->
+        <div class="relative">
+          <a
+            href="#"
+            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >Conjuntos</a
+          >
+          <!-- Submenu "Conjuntos" -->
+          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Conjuntos de Pedras</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Conjuntos de Diamantes</a
+            >
+          </div>
+        </div>
+
+        <!-- Item de menu "+Categorias" -->
+        <div class="relative">
+          <a
+            href="#"
+            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
+            >+Categorias</a
+          >
+          <!-- Submenu "+Categorias" -->
+          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Categorias Extras 1</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
+              >Categorias Extras 2</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="shadow-xl inset-x-0 top-2 h-px bg-yellow-300 pb-1"></div>
+      <img
+        src="/public/slider 1.png"
+        alt="Imagem de uma mulher usando joias Vallore, como brinco e colar"
+        class="w-full object-cover"
+      />
+    </div>
+
+    <script>
+      // JavaScript para mostrar/ocultar submenus ao passar o mouse
+      document.querySelectorAll(".relative").forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+          const submenu = item.querySelector(".absolute");
+          submenu.classList.remove("hidden");
+        });
+
+        item.addEventListener("mouseleave", () => {
+          const submenu = item.querySelector(".absolute");
+          submenu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
