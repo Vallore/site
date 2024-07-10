@@ -276,36 +276,6 @@ const Home = () => {
           className="w-full object-cover"
         />
       </div>
-            {/* SLIDER */}
-            <div className="relative">
-                <img src="/slider1.png" alt="Imagem do slider" className="w-full object-cover border-t-4 border-b-4 border-yellow-400 relative" />
-                <div className="flex justify-center bg-yellow-300 text-white p-5 max-w-7xl mx-auto space-x-4">
-                    <div className="flex items-center space-x-2">
-                        <i className="far fa-gem text-7xl"></i>
-                        <div>
-                            <p className="text-2xl font-bold">Vários lançamentos</p>
-                            <p className="text-lg">Grandes novidades</p>
-                        </div>
-                    </div>
-                    <div className="border-l-2 border-white h-[130px]"></div>
-                    <div className="flex items-center space-x-2">
-                        <i className="far fa-check-circle text-7xl"></i>
-                        <div>
-                            <p className="text-2xl font-bold">Garantia estendida</p>
-                            <p className="text-lg">Em todas as peças</p>
-                        </div>
-                    </div>
-                    <div className="border-l-2 border-white h-[130px]"></div>
-                    <div className="flex items-center space-x-2">
-                        <i className="fas fa-truck text-7xl"></i>
-                        <div>
-                            <p className="text-2xl font-bold">Frete grátis</p>
-                            <p className="text-lg">Acima de R$1000,00</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             {/* LANÇAMENTOS */}
             <div className="text-center mb-8 mt-10">
                 <h2 className="text-5xl font-bold text-black">LANÇAMENTOS</h2>
@@ -423,6 +393,38 @@ const Home = () => {
                 </div>
             </div>
 
+             {/* Box 4 */}
+             <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+                    <img src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover" />
+                    <div className="p-4 bg-gray-100">
+                        <h2 className="text-gray-800 text-lg font-bold mb-2">COLAR EXEMPLO - COL0123</h2>
+                        <div className="flex items-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+                            </svg>
+                            <span className="text-gray-600 ml-2">3 avaliações</span>
+                        </div>
+                        <p className="text-gray-700 text-2xl font-bold mb-2"><strong>R$219,99</strong></p>
+                        <p className="text-gray-600 mb-2"><strong>R$109,99</strong> à vista com desconto no Pix</p>
+                        <p className="text-gray-600 mb-4">ou em até <strong>12x</strong> de <strong>$18,33</strong> sem juros</p>
+                        <div className="flex gap-4">
+                            <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+                                <i className="fas fa-shopping-bag mr-2 text-white"></i>
+                                COMPRAR
+                            </button>
+                            <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+                                <i className="fas fa-heart mr-2"></i>
+                                FAVORITAR
+                            </button>
+                        </div>
+                    </div>
+                </div>
             {/* PRODUTOS POR CATEGORIA */}
             <div className="text-center mb-8 mt-10">
                 <h2 className="text-2xl font-bold text-black">VEJA NOSSOS PRODUTOS POR CATEGORIA</h2>
@@ -534,8 +536,41 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
+                 {/* Box 4 */}
+                 <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+                    <img src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover" />
+                    <div className="p-4 bg-gray-100">
+                        <h2 className="text-gray-800 text-lg font-bold mb-2">COLAR EXEMPLO - COL0123</h2>
+                        <div className="flex items-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 fill-current" viewBox="0 0 20 20">
+                                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+                            </svg>
+                            <span className="text-gray-600 ml-2">3 avaliações</span>
+                        </div>
+                        <p className="text-gray-700 text-2xl font-bold mb-2"><strong>R$219,99</strong></p>
+                        <p className="text-gray-600 mb-2"><strong>R$109,99</strong> à vista com desconto no Pix</p>
+                        <p className="text-gray-600 mb-4">ou em até <strong>12x</strong> de <strong>$18,33</strong> sem juros</p>
+                        <div className="flex gap-4">
+                            <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+                                <i className="fas fa-shopping-bag mr-2 text-white"></i>
+                                COMPRAR
+                            </button>
+                            <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+                                <i className="fas fa-heart mr-2"></i>
+                                FAVORITAR
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </div>
+            </div>
 
     
   );
