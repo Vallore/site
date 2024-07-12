@@ -596,10 +596,199 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className="flex flex-col items-center">
+  </div> 
+  {/*FORMULÁRIO*/}
+  <div className="flex flex-col items-center">
+      <form className="flex flex-col items-center">
+        <div className="mb-4">
+          <label htmlFor="nome" className="block text-sm font-medium text-gray-700 mb-1 text-center">Seu nome:</label>
+          <input type="text" id="nome" name="nome" className="border border-gray-300 px-3 py-2 rounded-lg w-96" />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1 text-center">Seu e-mail:</label>
+          <input type="email" id="email" name="email" className="border border-gray-300 px-3 py-2 rounded-lg w-96" />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="telefone" className="block text-sm font-medium text-gray-700 mb-1 text-center">Seu telefone:</label>
+          <input type="tel" id="telefone" name="telefone" className="border border-gray-300 px-3 py-2 rounded-lg w-96" />
+        </div>
+
+        <button type="submit" className="bg-yellow-300 text-yellow-700 font-bold px-4 py-2 rounded-md hover:bg-yellow-600 mt-4 hover:text-white">
+          QUERO ME CADASTRAR NA LISTA VIP!
+        </button>
+      </form>
+    </div>
+    <div className="flex justify-center bg-gray-200 py-8">
+        <div className="relative">
+          <img
+            src="/novidades 1.png"
+            alt="Imagem Newsletter"
+            className="inset-0 z-10 w-461 h-369 object-cover"
+          />
+          <div className="absolute left-0 top-0 z-0" style={{ width: '70px', height: '319px', background: '#F2E205' }}></div>
+          <div className="absolute right-0 bottom-0 z-0" style={{ width: '42px', height: '191px', background: '#F2E205' }}></div>
+        </div>
+
+        <div className="flex flex-col justify-center ml-8">
+          <h2 className="text-4xl font-bold mb-4 text-center">NEWSLETTER</h2>
+          <p className="mb-5 text-center text-2xl text-yellow-400 font-bold">
+            Que tal receber as novidades de nossa loja
+            <br />
+            em seu e-mail ou no seu WhatsApp?
+          </p>
+          <NewsletterForm />
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center py-12">
+        <div className="text-center">
+          <h2 className="text-5xl font-bold">DEPOIMENTOS</h2>
+          <p className="text-4xl text-yellow-300">de nossos clientes</p>
+        </div>
+
+        <div className="flex flex-wrap justify-center mt-8 text-2xl">
+          <div className="max-w-xs mx-4 mb-8 bg-white border border-yellow-300 shadow-lg p-4">
+            <p className="font-bold">Maria das Dores</p>
+            <p className="text-lg text-black">Produto lindo, de alta qualidade. Recomendo demais! Uso todos os dias!</p>
+            <div className="mt-4">
+              <span className="text-yellow-400">
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+              </span>
             </div>
+          </div>
 
+          <div className="max-w-xs mx-4 mb-8 bg-white border border-yellow-300 shadow-lg p-4">
+            <p className="font-semibold">João Silva</p>
+            <p className="text-sm text-gray-700">Ótimo produto, entrega rápida e eficiente. Comprarei novamente com certeza!</p>
+            <div className="mt-4">
+              <span className="text-yellow-400">
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+              </span>
+            </div>
+          </div>
 
-    
+          <div className="max-w-xs mx-4 mb-8 bg-white border border-yellow-300 shadow-lg p-4 ">
+            <p className="font-semibold">Ana Souza</p>
+            <p className="text-sm text-gray-700">Excelente atendimento e suporte pós-venda. Recomendo muito!</p>
+            <div className="mt-4">
+              <span className="text-yellow-400">
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+              </span>
+            </div>
+          </div>
+
+          <div className="max-w-xs mx-4 mb-8 bg-white border border-yellow-300 shadow-lg p-4">
+            <p className="font-semibold">Ana Souza</p>
+            <p className="text-sm text-gray-700">Excelente atendimento e suporte pós-venda. Recomendo muito!</p>
+            <div className="mt-4">
+              <span className="text-yellow-400">
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+                <i className="fas fa-star"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <button className="bg-yellow-300 px-6 py-3 mt-8" style={{ color: '#A67212' }}>
+          CONFIRA MAIS DEPOIMENTOS
+        </button>
+      </div>
+
+      <div className="py-12 bg-gray-100 p-20">
+        <div className="container mx-auto flex justify-center">
+          <div className="items-center mr-8 mt-3">
+            <h2 className="text-4xl font-bold">SIGA-NOS</h2>
+            <p className="text-3xl text-yellow-300">nas Redes Sociais</p>
+          </div>
+
+          <div className="flex items-center mr-8">
+            <span className="text-3xl text-blue-600 mr-2">
+              <i className="fab fa-facebook text-yellow-300 p-2 text-6xl"></i>
+            </span>
+            <p className="text-lg text-gray-700">Curta nossa página no <br /> <strong>FACEBOOK</strong></p>
+          </div>
+
+          <div className="flex items-center">
+            <span className="text-3xl text-yellow-300 mr-2">
+              <i className="fab fa-instagram text-yellow-300 p-2 text-6xl"></i>
+            </span>
+            <p className="text-lg text-gray-700">Siga nosso perfil no <br /> <strong>INSTAGRAM</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-12">
+        <div className="max-w-screen-2xl mx-auto">
+          <div className="shadow-xl inset-x-0 top-0 h-1 bg-yellow-300"></div>
+        </div>
+
+        <div className="flex justify-center md:grid-cols-3 gap-8">
+          <div className=" p-6">
+            <h3 className="text-xl font-bold mb-4">Institucional</h3>
+            <p className="text-gray-700 text-3xl">
+              Quem somos<br />
+              Formas de pagamento<br />
+              Política de privacidade<br />
+              Cuidados com suas semijoias<br />
+              Medidor de anel<br />
+              Como comprar no atacado<br />
+              Trocas e devoluções
+            </p>
+          </div>
+
+          <div className="p-6">
+            <h3 className="text-xl font-bold mb-4">Dúvidas frequentes</h3>
+            <p className="text-gray-700 text-3xl">
+              Como funciona o frete<br />
+              Garantia e satisfação<br />
+              Certificado de qualidade<br />
+              Formas de pagamento<br />
+              Garantia e troca<br />
+              Rastrear pedido
+            </p>
+          </div>
+
+          <div className="p-6">
+            <h3 className="text-xl font-bold mb-4">Fale conosco</h3>
+            <p className="text-gray-700 text-3xl">
+              Atendimento ao cliente<br />
+              Como realizar uma compra<br />
+              Está com dúvida?<br />
+              Elogios e reclamações<br />
+              Perguntas frequentes<br />
+              Televendas
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer className="py-8">
+        <div className="container mx-auto text-center">
+          <p className="text-sm mb-4">
+            Copyright (c) 2024 - Vallore Joias e Semijoias de Luxo. Todos os direitos reservados. Os preços, promoções, condições de pagamento, frete e produtos são válidos exclusivamente para compras realizadas via internet. Fotos meramente ilustrativas. Vallore Joias e Semijoias de Luxo - CNPJ: 00.000.000/0000-00 - Endereço da loja física, nº 000, Centro - São Lourenço/MG
+          </p>
+          <p className="font-bold">Desenvolvido por Rixxer Corp</p>
+        </div>
+      </footer>
+  </div>   
   );
 };
 
