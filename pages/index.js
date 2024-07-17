@@ -503,7 +503,6 @@ const Home = () => {
           src="/exemplo4.png"
           alt="COLAR EXEMPLO - COL0123"
           className="w-full object-cover"
-          style={{ marginBottom: 26.5 }}
         />
 
         {/* Informações do produto */}
@@ -799,7 +798,6 @@ const Home = () => {
           src="/exemplo4.png"
           alt="COLAR EXEMPLO - COL0123"
           className="w-full object-cover"
-          style={{ marginBottom: 26.5 }}
         />
 
         {/* Informações do produto */}
