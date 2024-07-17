@@ -315,7 +315,7 @@ const Home = () => {
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
         <img
-          src="/site/public/exemplo1.png"
+          src="/exemplo1.png"
           alt="COLAR EXEMPLO - COL0123"
           className="object-cover mb-5"
           style={{ width: 294 }}
@@ -1050,7 +1050,7 @@ const Home = () => {
           <div class="p-6">
             <h3 class="text-xl font-bold">Formas de Pagamento</h3>
             <div class="flex items-center mb-4">
-              <img src="/site/public/BANDEIRAS_CARTAO 1.png" class="w-72" alt="icone das bandeiras dos cartões"></img>
+              <img src="/site" class="w-72" alt="icone das bandeiras dos cartões"></img>
             </div>
             <div class="flex items-center mb-4">
               <img src="/site/public/pix 1.png" alt="icone de pix"></img>
