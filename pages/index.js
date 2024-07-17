@@ -310,258 +310,253 @@ const Home = () => {
       </div>
 
       {/* BOXES DE PRODUTOS */}
-      <div className="flex flex-wrap justify-center gap-4">
-        {/* Box 1 */}
-        <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
-          <img
-            src="/exemplo1.png"
-            alt="COLAR EXEMPLO - COL0123"
-            className="w-full object-cover"
-          />
-          <div className="p-4 bg-gray-100">
-            <h2 className="text-gray-800 text-lg font-bold mb-2">
-              COLAR EXEMPLO - COL0123
-            </h2>
-            <div className="flex items-center mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <span className="text-gray-600 ml-2">5 avaliações</span>
-            </div>
-            <p className="text-gray-700 text-2xl font-bold mb-2">
-              <strong>R$199,99</strong>
-            </p>
-            <p className="text-gray-600 mb-2">
-              <strong>R$99,99</strong> à vista com desconto no Pix
-            </p>
-            <p className="text-gray-600 mb-4">
-              ou em até <strong>10x</strong> de <strong>$11,99</strong> sem
-              juros
-            </p>
-            <div className="flex gap-4">
-              <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-shopping-bag mr-2 text-white"></i>
-                COMPRAR
-              </button>
-              <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-heart mr-2"></i>
-                FAVORITAR
-              </button>
-            </div>
-          </div>
-        </div>
+      <div className="flex flex-wrap justify-center gap-4 p-8">
+      {/* Box 1 */}
+      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+        {/* Imagem do produto */}
+        <img
+          src="/site/public/exemplo1.png"
+          alt="COLAR EXEMPLO - COL0123"
+          className="object-cover mb-5"
+          style={{ width: 294 }}
+        />
 
-        {/* Box 2 */}
-        <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
-          <img
-            src="/exemplo3.png"
-            alt="COLAR EXEMPLO - COL0123"
-            className="w-full object-cover"
-          />
-          <div className="p-4 bg-gray-100">
-            <h2 className="text-gray-800 text-lg font-bold mb-2">
-              COLAR EXEMPLO - COL0123
-            </h2>
-            <div className="flex items-center mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <span className="text-gray-600 ml-2">4 avaliações</span>
-            </div>
-            <p className="text-gray-700 text-2xl font-bold mb-2">
-              <strong>R$159,99</strong>
-            </p>
-            <p className="text-gray-600 mb-2">
-              <strong>R$79,99</strong> à vista com desconto no Pix
-            </p>
-            <p className="text-gray-600 mb-4">
-              ou em até <strong>8x</strong> de <strong>$19,99</strong> sem juros
-            </p>
-            <div className="flex gap-4">
-              <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-shopping-bag mr-2 text-white"></i>
-                COMPRAR
-              </button>
-              <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-heart mr-2"></i>
-                FAVORITAR
-              </button>
-            </div>
-          </div>
-        </div>
+        {/* Informações do produto */}
+        <div className="p-4 bg-gray-100">
+          {/* Título do produto */}
+          <h2 className="text-gray-800 text-lg font-bold mb-2">COLAR EXEMPLO - COL0123</h2>
 
-        {/* Box 3 */}
-        <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
-          <img
-            src="/exemplo2.png"
-            alt="COLAR EXEMPLO - COL0123"
-            className="w-full object-cover"
-          />
-          <div className="p-4 bg-gray-100">
-            <h2 className="text-gray-800 text-lg font-bold mb-2">
-              COLAR EXEMPLO - COL0123
-            </h2>
-            <div className="flex items-center mb-2">
+          {/* Avaliações */}
+          <div className="flex items-center mb-2">
+            {[...Array(5)].map((_, index) => (
               <svg
+                key={index}
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 text-yellow-500 fill-current"
                 viewBox="0 0 20 20"
               >
                 <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
               </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <span className="text-gray-600 ml-2">3 avaliações</span>
-            </div>
-            <p className="text-gray-700 text-2xl font-bold mb-2">
-              <strong>R$219,99</strong>
-            </p>
-            <p className="text-gray-600 mb-2">
-              <strong>R$109,99</strong> à vista com desconto no Pix
-            </p>
-            <p className="text-gray-600 mb-4">
-              ou em até <strong>12x</strong> de <strong>$18,33</strong> sem
-              juros
-            </p>
-            <div className="flex gap-4">
-              <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-shopping-bag mr-2 text-white"></i>
-                COMPRAR
-              </button>
-              <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-heart mr-2"></i>
-                FAVORITAR
-              </button>
-            </div>
+            ))}
+            <span className="text-gray-600 ml-2">5 avaliações</span>
           </div>
-        </div>
-        {/* Box 4 */}
-        <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
-          <img
-            src="/exemplo4.png"
-            alt="COLAR EXEMPLO - COL0123"
-            className="w-full object-cover"
-          />
-          <div className="p-4 bg-gray-100">
-            <h2 className="text-gray-800 text-lg font-bold mb-2">
-              COLAR EXEMPLO - COL0123
-            </h2>
-            <div className="flex items-center mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <span className="text-gray-600 ml-2">3 avaliações</span>
-            </div>
-            <p className="text-gray-700 text-2xl font-bold mb-2">
-              <strong>R$219,99</strong>
-            </p>
-            <p className="text-gray-600 mb-2">
-              <strong>R$109,99</strong> à vista com desconto no Pix
-            </p>
-            <p className="text-gray-600 mb-4">
-              ou em até <strong>12x</strong> de <strong>$18,33</strong> sem
-              juros
-            </p>
-            <div className="flex gap-4">
+
+          {/* Preço original */}
+          <p className="text-gray-700 text-2xl font-bold mb-2">
+            <strong>R$199,99</strong>
+          </p>
+
+          {/* Preço com desconto no Pix */}
+          <p className="text-gray-600 mb-2">
+            <strong>R$99,99</strong> à vista com desconto no Pix
+          </p>
+
+          {/* Opções de parcelamento */}
+          <p className="text-gray-600 mb-4">
+            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
+          </p>
+
+          <div className="flex gap-4">
+            {/* Botão de compra */}
+            <a href="/produto1.html">
               <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
                 <i className="fas fa-shopping-bag mr-2 text-white"></i>
                 COMPRAR
               </button>
-              <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-heart mr-2"></i>
-                FAVORITAR
-              </button>
-            </div>
+            </a>
+
+            {/* Botão de favoritar */}
+            <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-heart mr-2"></i>
+              FAVORITAR
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Box 2 */}
+      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+        {/* Imagem do produto */}
+        <img
+          src="/site/public/exemplo3.png"
+          alt="COLAR EXEMPLO - COL0123"
+          className="object-cover mb-5"
+          style={{ width: 275 }}
+        />
+
+        {/* Informações do produto */}
+        <div className="p-4 bg-gray-100">
+          {/* Título do produto */}
+          <h2 className="text-gray-800 text-lg font-bold mb-2">COLAR EXEMPLO - COL0123</h2>
+
+          {/* Avaliações */}
+          <div className="flex items-center mb-2">
+            {[...Array(5)].map((_, index) => (
+              <svg
+                key={index}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-yellow-500 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+              </svg>
+            ))}
+            <span className="text-gray-600 ml-2">5 avaliações</span>
+          </div>
+
+          {/* Preço original */}
+          <p className="text-gray-700 text-2xl font-bold mb-2">
+            <strong>R$199,99</strong>
+          </p>
+
+          {/* Preço com desconto no Pix */}
+          <p className="text-gray-600 mb-2">
+            <strong>R$99,99</strong> à vista com desconto no Pix
+          </p>
+
+          {/* Opções de parcelamento */}
+          <p className="text-gray-600 mb-4">
+            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
+          </p>
+
+          <div className="flex gap-4">
+            {/* Botão de compra */}
+            <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-shopping-bag mr-2 text-white"></i>
+              COMPRAR
+            </button>
+
+            {/* Botão de favoritar */}
+            <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-heart mr-2"></i>
+              FAVORITAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Box 3 */}
+      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+        {/* Imagem do produto */}
+        <img
+          src="/site/public/exemplo2.png"
+          alt="COLAR EXEMPLO - COL0123"
+          className="w-full object-cover"
+          style={{ marginBottom: 26.5 }}
+        />
+
+        {/* Informações do produto */}
+        <div className="p-4 bg-gray-100">
+          {/* Título do produto */}
+          <h2 className="text-gray-800 text-lg font-bold mb-2">COLAR EXEMPLO - COL0123</h2>
+
+          {/* Avaliações */}
+          <div className="flex items-center mb-2">
+            {[...Array(5)].map((_, index) => (
+              <svg
+                key={index}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-yellow-500 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+              </svg>
+            ))}
+            <span className="text-gray-600 ml-2">5 avaliações</span>
+          </div>
+
+          {/* Preço original */}
+          <p className="text-gray-700 text-2xl font-bold mb-2">
+            <strong>R$199,99</strong>
+          </p>
+
+          {/* Preço com desconto no Pix */}
+          <p className="text-gray-600 mb-2">
+            <strong>R$99,99</strong> à vista com desconto no Pix
+          </p>
+
+          {/* Opções de parcelamento */}
+          <p className="text-gray-600 mb-4">
+            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
+          </p>
+
+          <div className="flex gap-4">
+            {/* Botão de compra */}
+            <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-shopping-bag mr-2 text-white"></i>
+              COMPRAR
+            </button>
+
+            {/* Botão de favoritar */}
+            <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-heart mr-2"></i>
+              FAVORITAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Box 4 */}
+      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+        {/* Imagem do produto */}
+        <img
+          src="/site/public/exemplo4.png"
+          alt="COLAR EXEMPLO - COL0123"
+          className="w-full object-cover"
+          style={{ marginBottom: 26.5 }}
+        />
+
+        {/* Informações do produto */}
+        <div className="p-4 bg-gray-100">
+          {/* Título do produto */}
+          <h2 className="text-gray-800 text-lg font-bold mb-2">COLAR EXEMPLO - COL0123</h2>
+
+          {/* Avaliações */}
+          <div className="flex items-center mb-2">
+            {[...Array(5)].map((_, index) => (
+              <svg
+                key={index}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-yellow-500 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+              </svg>
+            ))}
+            <span className="text-gray-600 ml-2">5 avaliações</span>
+          </div>
+
+          {/* Preço original */}
+          <p className="text-gray-700 text-2xl font-bold mb-2">
+            <strong>R$199,99</strong>
+          </p>
+
+          {/* Preço com desconto no Pix */}
+          <p className="text-gray-600 mb-2">
+            <strong>R$99,99</strong> à vista com desconto no Pix
+          </p>
+
+          {/* Opções de parcelamento */}
+          <p className="text-gray-600 mb-4">
+            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
+          </p>
+
+          <div className="flex gap-4">
+            {/* Botão de compra */}
+            <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-shopping-bag mr-2 text-white"></i>
+              COMPRAR
+            </button>
+
+            {/* Botão de favoritar */}
+            <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-heart mr-2"></i>
+              FAVORITAR
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
       {/* PRODUTOS POR CATEGORIA */}
       <div className="text-center mb-8 mt-10">
@@ -579,237 +574,253 @@ const Home = () => {
       </div>
 
       {/* BOXES DE PRODUTOS MAIS VENDIDOS */}
-      <div className="flex flex-wrap justify-center gap-4">
-        {/* Box 1 */}
-        <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
-          <img
-            src="/exemplo4.png"
-            alt="COLAR EXEMPLO - COL0123"
-            className="w-full object-cover"
-          />
-          <div className="p-4 bg-gray-100">
-            <h2 className="text-gray-800 text-lg font-bold mb-2">
-              COLAR EXEMPLO - COL0123
-            </h2>
-            <div className="flex items-center mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <span className="text-gray-600 ml-2">4 avaliações</span>
-            </div>
-            <p className="text-gray-700 text-2xl font-bold mb-2">
-              <strong>R$179,99</strong>
-            </p>
-            <p className="text-gray-600 mb-2">
-              <strong>R$89,99</strong> à vista com desconto no Pix
-            </p>
-            <p className="text-gray-600 mb-4">
-              ou em até <strong>9x</strong> de <strong>$19,99</strong> sem juros
-            </p>
-            <div className="flex gap-4">
-              <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-shopping-bag mr-2 text-white"></i>
-                COMPRAR
-              </button>
-              <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-heart mr-2"></i>
-                FAVORITAR
-              </button>
-            </div>
-          </div>
-        </div>
+      <div className="flex flex-wrap justify-center gap-4 p-8">
+      {/* Box 1 */}
+      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+        {/* Imagem do produto */}
+        <img
+          src="/site/public/exemplo1.png"
+          alt="COLAR EXEMPLO - COL0123"
+          className="object-cover mb-5"
+          style={{ width: 294 }}
+        />
 
-        {/* Box 2 */}
-        <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
-          <img
-            src="/exemplo3.png"
-            alt="COLAR EXEMPLO - COL0123"
-            className="w-full object-cover"
-          />
-          <div className="p-4 bg-gray-100">
-            <h2 className="text-gray-800 text-lg font-bold mb-2">
-              COLAR EXEMPLO - COL0123
-            </h2>
-            <div className="flex items-center mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <span className="text-gray-600 ml-2">3 avaliações</span>
-            </div>
-            <p className="text-gray-700 text-2xl font-bold mb-2">
-              <strong>R$189,99</strong>
-            </p>
-            <p className="text-gray-600 mb-2">
-              <strong>R$94,99</strong> à vista com desconto no Pix
-            </p>
-            <p className="text-gray-600 mb-4">
-              ou em até <strong>10x</strong> de <strong>$18,99</strong> sem
-              juros
-            </p>
-            <div className="flex gap-4">
-              <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-shopping-bag mr-2 text-white"></i>
-                COMPRAR
-              </button>
-              <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-heart mr-2"></i>
-                FAVORITAR
-              </button>
-            </div>
-          </div>
-        </div>
+        {/* Informações do produto */}
+        <div className="p-4 bg-gray-100">
+          {/* Título do produto */}
+          <h2 className="text-gray-800 text-lg font-bold mb-2">COLAR EXEMPLO - COL0123</h2>
 
-        {/* Box 3 */}
-        <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
-          <img
-            src="/exemplo1.png"
-            alt="COLAR EXEMPLO - COL0123"
-            className="w-full object-cover"
-          />
-          <div className="p-4 bg-gray-100">
-            <h2 className="text-gray-800 text-lg font-bold mb-2">
-              COLAR EXEMPLO - COL0123
-            </h2>
-            <div className="flex items-center mb-2">
+          {/* Avaliações */}
+          <div className="flex items-center mb-2">
+            {[...Array(5)].map((_, index) => (
               <svg
+                key={index}
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 text-yellow-500 fill-current"
                 viewBox="0 0 20 20"
               >
                 <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
               </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <span className="text-gray-600 ml-2">5 avaliações</span>
-            </div>
-            <p className="text-gray-700 text-2xl font-bold mb-2">
-              <strong>R$209,99</strong>
-            </p>
-            <p className="text-gray-600 mb-2">
-              <strong>R$104,99</strong> à vista com desconto no Pix
-            </p>
-            <p className="text-gray-600 mb-4">
-              ou em até <strong>6x</strong> de <strong>$34,99</strong> sem juros
-            </p>
-            <div className="flex gap-4">
-              <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-shopping-bag mr-2 text-white"></i>
-                COMPRAR
-              </button>
-              <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-heart mr-2"></i>
-                FAVORITAR
-              </button>
-            </div>
+            ))}
+            <span className="text-gray-600 ml-2">5 avaliações</span>
           </div>
-        </div>
 
-        {/* Box 4 */}
-        <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
-          <img
-            src="/exemplo4.png"
-            alt="COLAR EXEMPLO - COL0123"
-            className="w-full object-cover"
-          />
-          <div className="p-4 bg-gray-100">
-            <h2 className="text-gray-800 text-lg font-bold mb-2">
-              COLAR EXEMPLO - COL0123
-            </h2>
-            <div className="flex items-center mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
-                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
-              </svg>
-              <span className="text-gray-600 ml-2">3 avaliações</span>
-            </div>
-            <p className="text-gray-700 text-2xl font-bold mb-2">
-              <strong>R$219,99</strong>
-            </p>
-            <p className="text-gray-600 mb-2">
-              <strong>R$109,99</strong> à vista com desconto no Pix
-            </p>
-            <p className="text-gray-600 mb-4">
-              ou em até <strong>12x</strong> de <strong>$18,33</strong> sem
-              juros
-            </p>
-            <div className="flex gap-4">
+          {/* Preço original */}
+          <p className="text-gray-700 text-2xl font-bold mb-2">
+            <strong>R$199,99</strong>
+          </p>
+
+          {/* Preço com desconto no Pix */}
+          <p className="text-gray-600 mb-2">
+            <strong>R$99,99</strong> à vista com desconto no Pix
+          </p>
+
+          {/* Opções de parcelamento */}
+          <p className="text-gray-600 mb-4">
+            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
+          </p>
+
+          <div className="flex gap-4">
+            {/* Botão de compra */}
+            <a href="/produto1.html">
               <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
                 <i className="fas fa-shopping-bag mr-2 text-white"></i>
                 COMPRAR
               </button>
-              <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-heart mr-2"></i>
-                FAVORITAR
-              </button>
-            </div>
+            </a>
+
+            {/* Botão de favoritar */}
+            <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-heart mr-2"></i>
+              FAVORITAR
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Box 2 */}
+      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+        {/* Imagem do produto */}
+        <img
+          src="/site/public/exemplo3.png"
+          alt="COLAR EXEMPLO - COL0123"
+          className="object-cover mb-5"
+          style={{ width: 275 }}
+        />
+
+        {/* Informações do produto */}
+        <div className="p-4 bg-gray-100">
+          {/* Título do produto */}
+          <h2 className="text-gray-800 text-lg font-bold mb-2">COLAR EXEMPLO - COL0123</h2>
+
+          {/* Avaliações */}
+          <div className="flex items-center mb-2">
+            {[...Array(5)].map((_, index) => (
+              <svg
+                key={index}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-yellow-500 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+              </svg>
+            ))}
+            <span className="text-gray-600 ml-2">5 avaliações</span>
+          </div>
+
+          {/* Preço original */}
+          <p className="text-gray-700 text-2xl font-bold mb-2">
+            <strong>R$199,99</strong>
+          </p>
+
+          {/* Preço com desconto no Pix */}
+          <p className="text-gray-600 mb-2">
+            <strong>R$99,99</strong> à vista com desconto no Pix
+          </p>
+
+          {/* Opções de parcelamento */}
+          <p className="text-gray-600 mb-4">
+            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
+          </p>
+
+          <div className="flex gap-4">
+            {/* Botão de compra */}
+            <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-shopping-bag mr-2 text-white"></i>
+              COMPRAR
+            </button>
+
+            {/* Botão de favoritar */}
+            <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-heart mr-2"></i>
+              FAVORITAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Box 3 */}
+      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+        {/* Imagem do produto */}
+        <img
+          src="/site/public/exemplo2.png"
+          alt="COLAR EXEMPLO - COL0123"
+          className="w-full object-cover"
+          style={{ marginBottom: 26.5 }}
+        />
+
+        {/* Informações do produto */}
+        <div className="p-4 bg-gray-100">
+          {/* Título do produto */}
+          <h2 className="text-gray-800 text-lg font-bold mb-2">COLAR EXEMPLO - COL0123</h2>
+
+          {/* Avaliações */}
+          <div className="flex items-center mb-2">
+            {[...Array(5)].map((_, index) => (
+              <svg
+                key={index}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-yellow-500 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+              </svg>
+            ))}
+            <span className="text-gray-600 ml-2">5 avaliações</span>
+          </div>
+
+          {/* Preço original */}
+          <p className="text-gray-700 text-2xl font-bold mb-2">
+            <strong>R$199,99</strong>
+          </p>
+
+          {/* Preço com desconto no Pix */}
+          <p className="text-gray-600 mb-2">
+            <strong>R$99,99</strong> à vista com desconto no Pix
+          </p>
+
+          {/* Opções de parcelamento */}
+          <p className="text-gray-600 mb-4">
+            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
+          </p>
+
+          <div className="flex gap-4">
+            {/* Botão de compra */}
+            <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-shopping-bag mr-2 text-white"></i>
+              COMPRAR
+            </button>
+
+            {/* Botão de favoritar */}
+            <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-heart mr-2"></i>
+              FAVORITAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Box 4 */}
+      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+        {/* Imagem do produto */}
+        <img
+          src="/site/public/exemplo4.png"
+          alt="COLAR EXEMPLO - COL0123"
+          className="w-full object-cover"
+          style={{ marginBottom: 26.5 }}
+        />
+
+        {/* Informações do produto */}
+        <div className="p-4 bg-gray-100">
+          {/* Título do produto */}
+          <h2 className="text-gray-800 text-lg font-bold mb-2">COLAR EXEMPLO - COL0123</h2>
+
+          {/* Avaliações */}
+          <div className="flex items-center mb-2">
+            {[...Array(5)].map((_, index) => (
+              <svg
+                key={index}
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-yellow-500 fill-current"
+                viewBox="0 0 20 20"
+              >
+                <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
+              </svg>
+            ))}
+            <span className="text-gray-600 ml-2">5 avaliações</span>
+          </div>
+
+          {/* Preço original */}
+          <p className="text-gray-700 text-2xl font-bold mb-2">
+            <strong>R$199,99</strong>
+          </p>
+
+          {/* Preço com desconto no Pix */}
+          <p className="text-gray-600 mb-2">
+            <strong>R$99,99</strong> à vista com desconto no Pix
+          </p>
+
+          {/* Opções de parcelamento */}
+          <p className="text-gray-600 mb-4">
+            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
+          </p>
+
+          <div className="flex gap-4">
+            {/* Botão de compra */}
+            <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-shopping-bag mr-2 text-white"></i>
+              COMPRAR
+            </button>
+
+            {/* Botão de favoritar */}
+            <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-heart mr-2"></i>
+              FAVORITAR
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
       <div className="flex justify-center bg-gray-200 py-8">
       {/* Coluna da imagem */}
       <div className="relative">
@@ -1001,67 +1012,68 @@ const Home = () => {
         </div>
       </div>
     </div>
-
-    <div className="py-12">
-      <div className="max-w-screen-2xl mx-auto">
-        <div className="shadow-xl inset-x-0 top-0 h-1 bg-yellow-300"></div>
-      </div>
-      <div className="flex justify-center md:grid-cols-3 gap-8">
-        <div className="p-6">
-          <h3 className="text-xl font-bold mb-4">Institucional</h3>
-          <p className="text-gray-700 text-3xl">
-            Quem somos<br />
-            Formas de pagamento<br />
-            Política de privacidade<br />
-            Cuidados com suas semijoias<br />
-            Medidor de anel<br />
-            Como comprar no atacado<br />
-            Troca e devolução<br />
-            Frete e prazo de entrega<br />
-            Acompanhe seu pedido
-          </p>
+           
+     {/* Formas de Pagamento */}
+     <div class="pt-10">
+        <div class="max-w-screen-2xl mx-auto">
+          <div class="shadow-xl inset-x-0 top-0 h-0.5 bg-yellow-300"></div>
         </div>
-
-        <div className="p-6">
-          <h3 className="text-xl font-bold mb-4">Atendimento</h3>
-          <p className="text-gray-700">
-            <i className="fab fa-whatsapp mr-2 text-green-600"></i> WhatsApp (35) 3333-333<br />
-            <i className="fas fa-phone-alt mr-2 text-green-600"></i> Telefone (35) 3333-3333<br />
-            <i className="fas fa-envelope mr-2 text-green-600"></i> email contato@valloresemijoias.com.br<br />
-            <span className="text-gray-500">Horário de funcionamento: de segunda à sexta, das 9h às 18h.</span>
-          </p>
-        </div>
-
-        <div className="p-6">
-          <h3 className="text-xl font-bold mb-4">Formas de Pagamento</h3>
-          <div className="flex items-center mb-4">
-            <i className="fab fa-cc-mastercard fa-2x mr-2"></i>
-            <i className="fab fa-cc-visa fa-2x mr-2"></i>
-            <i className="fab fa-cc-elo fa-2x mr-2"></i>
-            <i className="fab fa-cc-mastercard fa-2x mr-2"></i>
-            <i className="fab fa-cc-hipercard fa-2x mr-2"></i>
+        <div class="flex justify-center md:grid-cols-3 gap-8">
+          {/* Caixa Institucional */}
+          <div class=" p-6">
+            <h3 class="text-xl font-bold mb-4">Institucional</h3>
+            <p class="text-gray-700 text-lg">
+              Quem somos<br />
+              Formas de pagamento<br />
+              Política de privacidade<br />
+              Cuidados com suas semijoias<br />
+              Medidor de anel<br />
+              Como comprar no atacado<br />
+              Troca e devolução<br />
+              Frete e prazo de entrega<br />
+              Acompanhe seu pedido
+            </p>
           </div>
-          <div className="flex items-center mb-4">
-            <i className="fas fa-money-bill-wave fa-2x text-green-500 mr-2"></i>
-            <i className="fab fa-creative-commons-nc fa-2x text-gray-500"></i>
+
+          {/* Caixa Atendimento */}
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Atendimento</h3>
+            <p class="text-gray-700 mt-4">
+              <p class="pb-2"><strong>WhatsApp</strong> (35) 3333-333</p> 
+              <p class="pb-2"><strong>Telefone</strong> (35) 3333-3333</p>
+              <p class="pb-2"><strong>Email: </strong> contato@valloresemijoias.com.br</p>
+              <span class="text-gray-300">Horário de funcionamento: de segunda à sexta,<br />das 9h às 18h.</span>
+            </p>
           </div>
-          <p className="text-gray-700">
-            <i className="fas fa-shield-alt mr-2 text-green-600"></i> Compra 100% segura
-          </p>
+
+          {/* Caixa Formas de Pagamento */}
+          <div class="p-6">
+            <h3 class="text-xl font-bold">Formas de Pagamento</h3>
+            <div class="flex items-center mb-4">
+              <img src="/site/public/BANDEIRAS_CARTAO 1.png" class="w-72" alt="icone das bandeiras dos cartões"></img>
+            </div>
+            <div class="flex items-center mb-4">
+              <img src="/site/public/pix 1.png" alt="icone de pix"></img>
+              <img src="/site/public/boleto 1.png" alt="icone de boleto"></img>
+            </div>
+            <img src="/site/public/compra-segura.png" class="w-full" alt="icone da compra segura"></img>
+          </div>
         </div>
       </div>
-    </div>
 
-    <footer className="py-8">
-      <div className="container mx-auto text-center">
-        <p className="text-sm mb-4">
-          Copyright (c) 2024 - Vallore Joias e Semijoias de Luxo. Todos os direitos reservados. Os preços, promoções, condições de pagamento, frete e produtos são válidos exclusivamente para compras realizadas via internet. Fotos meramente ilustrativas. Vallore Joias e Semijoias de Luxo - CNPJ: 00.000.000/0000-00 - Endereço da loja física, nº 000, Centro - São Lourenço/MG
-        </p>
-        <p className="font-bold">Desenvolvido por Rixxer Corp</p>
-      </div>
-    </footer>
+      {/* Rodapé */}
+      <footer>
+        <div class="shadow-lg h-px bg-gray-300 mb-8"></div>
+        <div class="container mx-auto text-center">
+          <p class="text-sm mb-4 font-semibold">
+            Copyright (c) 2024 - Vallore Joias e Semijoias de Luxo. Todos os direitos reservados. Os preços, promoções, condições de pagamento, frete e produtos são válidos exclusivamente para compras realizadas via internet. Fotos meramente ilustrativas. Vallore Joias e Semijoias de Luxo - CNPJ: 00.000.000/0000-00 - Endereço da loja física, nº 000, Centro - São Lourenço/MG
+          </p>
+          <p class="font-bold">Desenvolvido por Rixxer Corp</p>
+        </div>
+      </footer>
     </div>
   );
 };
+
 
 export default Home;
