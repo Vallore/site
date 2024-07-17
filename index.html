@@ -22,7 +22,7 @@
     <!-- Link para o Font Awesome -->
     <title>Vallore Joias</title>
   </head>
-  <body class="bg-white">
+  <body class="bg-white box-border">
     <!-- Cabeçalho Superior -->
     <div class="bg-yellow-300 text-black text-center py-3 flex justify-center">
       <p class="font-bold mr-4">ATACADO: Pedido Mínimo R$500 + Frete Grátis!</p>
@@ -69,176 +69,99 @@
       <div class="flex items-center space-x-10">
         <!-- Ícone de busca -->
         <p class="font-bold">
-          Busca <i class="fas fa-search fa-2x text-yellow-300"></i>
+          Busca <a href="http://"><i class="fas fa-search fa-2x text-yellow-300"></i></a>
         </p>
         <!-- Ícone de usuário -->
-        <i class="fas fa-user fa-2x text-yellow-300"></i>
+        <a href="#"><i class="fas fa-user fa-2x text-yellow-300"></i></a>
         <!-- Ícone de compras -->
-        <i class="fas fa-shopping-bag fa-2x text-yellow-300"></i>
+        <a href="http://"><i class="fas fa-shopping-bag fa-2x text-yellow-300"></i></a>
       </div>
     </div>
     <!--MENU NAV-->
-    <div class="pt-6 relative">
+    <div class="pt-6">
       <div class="max-w-screen-md mx-auto">
         <div class="shadow-lg inset-x-0 top-0 h-px bg-gray-300"></div>
       </div>
       <div class="flex justify-center space-x-10 p-5">
         <!-- Item de menu "Lançamentos" -->
-        <div class="relative">
-          <a
-            href="#"
-            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-            >Lançamentos</a
-          >
+        <div class="relative group">
+          <button class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 focus:outline-none">Lançamentos</button>
           <!-- Submenu "Lançamentos" -->
-          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Ver todos</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Novidades</a
-            >
-          </div>
+          <ul class="hidden absolute bg-white shadow-lg mt-2 w-48 rounded-md overflow-hidden z-10">
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Ver todos</a></li>
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Novidades</a></li>
+          </ul>
         </div>
-
+    
         <!-- Item de menu "Brincos" -->
-        <div class="relative">
-          <a
-            href="#"
-            class="block py-3 px-4 text-lg font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-            >Brincos</a
-          >
+        <div class="relative group">
+          <button class="block py-3 px-4 text-lg font-bold uppercase text-center text-gray-800 hover:text-gray-600 focus:outline-none">Brincos</button>
           <!-- Submenu "Brincos" -->
-          <div class="absolute hidden bg-white shadow-xl mt-2 w-48 submenu">
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Argolas</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Pendentes</a
-            >
-          </div>
+          <ul class="hidden absolute bg-white shadow-lg mt-2 w-48 rounded-md overflow-hidden z-10">
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Argolas</a></li>
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Pendentes</a></li>
+          </ul>
         </div>
-
+    
         <!-- Item de menu "Anéis" -->
-        <div class="relative">
-          <a
-            href="#"
-            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-            >Anéis</a
-          >
+        <div class="relative group">
+          <button class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 focus:outline-none">Anéis</button>
           <!-- Submenu "Anéis" -->
-          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Solitários</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Aparadores</a
-            >
-          </div>
+          <ul class="hidden absolute bg-white shadow-lg mt-2 w-48 rounded-md overflow-hidden z-10">
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Solitários</a></li>
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Aparadores</a></li>
+          </ul>
         </div>
-
+    
         <!-- Item de menu "Colares" -->
-        <div class="relative">
-          <a
-            href="#"
-            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-            >Colares</a
-          >
+        <div class="relative group">
+          <button class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 focus:outline-none">Colares</button>
           <!-- Submenu "Colares" -->
-          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Chokers</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Longos</a
-            >
-          </div>
+          <ul class="hidden absolute bg-white shadow-lg mt-2 w-48 rounded-md overflow-hidden z-10">
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Chokers</a></li>
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Longos</a></li>
+          </ul>
         </div>
-
+    
         <!-- Item de menu "Pulseiras" -->
-        <div class="relative">
-          <a
-            href="#"
-            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-            >Pulseiras</a
-          >
+        <div class="relative group">
+          <button class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 focus:outline-none">Pulseiras</button>
           <!-- Submenu "Pulseiras" -->
-          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Pulseiras de Prata</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Pulseiras de Ouro</a
-            >
-          </div>
+          <ul class="hidden absolute bg-white shadow-lg mt-2 w-48 rounded-md overflow-hidden z-10">
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Pulseiras de Prata</a></li>
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Pulseiras de Ouro</a></li>
+          </ul>
         </div>
-
+    
         <!-- Item de menu "Conjuntos" -->
-        <div class="relative">
-          <a
-            href="#"
-            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-            >Conjuntos</a
-          >
+        <div class="relative group">
+          <button class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 focus:outline-none">Conjuntos</button>
           <!-- Submenu "Conjuntos" -->
-          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Conjuntos de Pedras</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Conjuntos de Diamantes</a
-            >
-          </div>
+          <ul class="hidden absolute bg-white shadow-lg mt-2 w-48 rounded-md overflow-hidden z-10">
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Conjuntos de Pedras</a></li>
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Conjuntos de Diamantes</a></li>
+          </ul>
         </div>
-
+    
         <!-- Item de menu "+Categorias" -->
-        <div class="relative">
-          <a
-            href="#"
-            class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-            >+Categorias</a
-          >
+        <div class="relative group">
+          <button class="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 focus:outline-none">+Categorias</button>
           <!-- Submenu "+Categorias" -->
-          <div class="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Categorias Extras 1</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-              >Categorias Extras 2</a
-            >
-          </div>
+          <ul class="hidden absolute bg-white shadow-lg mt-2 w-48 rounded-md overflow-hidden z-10">
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Categorias Extras 1</a></li>
+            <li><a href="#" class="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Categorias Extras 2</a></li>
+          </ul>
         </div>
       </div>
     </div>
-
+    <style>
+      /* Mostra o submenu quando o item pai (div.group) estiver em :hover */
+      .group:hover > ul {
+        display: block;
+      }
+    </style>
+    
+<!--IMAGEM SLIDE-->
     <div class="relative">
       <img src="/site/public/slider 1.png" alt="Imagem de uma mulher usando joias Vallore, como brinco e colar" class="w-full object-cover border-t-4 border-b-4 border-yellow-400 relative" />
       <!--CAIXA DE FRETE-->
@@ -276,12 +199,13 @@
       <h2 class="text-5xl font-bold text-black">LANÇAMENTOS</h2>
       <p class=" text-4xl text-yellow-300">confira nossos lançamentos</p>
     </div>
+
     <!--BOXES-->
-    <div class="flex flex-wrap justify-center gap-4">
+<div class="flex flex-wrap justify-center gap-4">
       <!--BOX 1-->
-      <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+  <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
           <!-- Imagem do produto -->
-          <img src="/site/public/exemplo1.png" alt="COLAR EXEMPLO - COL0123" class=" w-full object-cover ">
+          <img src="/site/public/exemplo1.png" alt="COLAR EXEMPLO - COL0123" class="object-cover mb-5" style="width: 294px;">
   
           <!-- Informações do produto -->
           <div class="p-4 bg-gray-100">
@@ -319,10 +243,12 @@
   
               <div class="flex gap-4">
                 <!-- Botão de compra -->
-                <button class="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+                <a href="/produto1.html">
+                  <button class="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
                     <i class="fas fa-shopping-bag mr-2 text-white"></i>
                     COMPRAR
                 </button>
+                </a>
             
                 <!-- Botão de favoritar -->
                 <button class="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
@@ -331,12 +257,12 @@
                 </button>
               </div>
           </div>
-      </div>
+  </div>
   
       <!--BOX 2 -->
-      <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+  <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         <!-- Imagem do produto -->
-        <img src="/site/public/exemplo3.png" alt="COLAR EXEMPLO - COL0123" class=" w-full object-cover ">
+        <img src="/site/public/exemplo3.png" alt="COLAR EXEMPLO - COL0123" class="object-cover mb-5" style="width: 275px;">
 
         <!-- Informações do produto -->
         <div class="p-4 bg-gray-100">
@@ -386,11 +312,11 @@
               </button>
             </div>
         </div>
-    </div>
+  </div>
     <!--BOX 3-->
-    <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+  <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
       <!-- Imagem do produto -->
-      <img src="/site/public/exemplo2.png" alt="COLAR EXEMPLO - COL0123" class=" w-full object-cover">
+      <img src="/site/public/exemplo2.png" alt="COLAR EXEMPLO - COL0123" class=" w-full object-cover" style="margin-bottom: 26.5px;">
 
       <!-- Informações do produto -->
       <div class="p-4 bg-gray-100">
@@ -482,10 +408,12 @@
 
         <div class="flex gap-4">
           <!-- Botão de compra -->
-          <button class="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+          <a href="">
+            <button class="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
               <i class="fas fa-shopping-bag mr-2 text-white"></i>
               COMPRAR
           </button>
+          </a>
       
           <!-- Botão de favoritar -->
           <button class="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
@@ -494,36 +422,42 @@
           </button>
         </div>
     </div>
-</div>     
+  </div>     
 </div>
 
 <!--PRODUTOS POR CATEGORIA-->
 <div class="text-center mb-8 mt-10">
   <h2 class="text-4xl font-bold text-black">VEJA NOSSOS PRODUTOS POR CATEGORIA</h2>
 </div>
-
 <div class="flex justify-center">
   <div class="flex flex-wrap">
-    <img
+    <a href="#">
+      <img
       src="/site/public/Prancheta 1.png"
       alt="Imagem 1"
-      class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
-    />
-    <img
+      class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"/>
+    </a>
+    <a href="http://" target="_blank" rel="noopener noreferrer">
+      <img
       src="/site/public/Prancheta 2.png"
       alt="Imagem 2"
       class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
-    />
+      />
+    </a>
+   <a href="http://" target="_blank" rel="noopener noreferrer">
     <img
-      src="/site/public/Prancheta 3.png"
-      alt="Imagem 3"
-      class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
+    src="/site/public/Prancheta 3.png"
+    alt="Imagem 3"
+    class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
     />
-    <img
+   </a>
+    <a href="http://" target="_blank" rel="noopener noreferrer">
+      <img
       src="/site/public/Prancheta 4.png"
       alt="Imagem 4"
       class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
-    />
+      />
+    </a>
   </div>
 </div>
 
@@ -534,11 +468,12 @@
   </div>
 
 <!--BOX MAIS VENDIDAS -->
-<div class="flex flex-wrap justify-center gap-4">
+    <!--BOXES-->
+    <div class="flex flex-wrap justify-center gap-4">
       <!--BOX 1-->
-      <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+  <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
           <!-- Imagem do produto -->
-          <img src="/site/public/exemplo1.png" alt="COLAR EXEMPLO - COL0123" class=" w-full object-cover ">
+          <img src="/site/public/exemplo1.png" alt="COLAR EXEMPLO - COL0123" class="object-cover mb-5" style="width: 294px;">
   
           <!-- Informações do produto -->
           <div class="p-4 bg-gray-100">
@@ -576,10 +511,12 @@
   
               <div class="flex gap-4">
                 <!-- Botão de compra -->
-                <button class="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+                <a href="/produto1.html">
+                  <button class="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
                     <i class="fas fa-shopping-bag mr-2 text-white"></i>
                     COMPRAR
                 </button>
+                </a>
             
                 <!-- Botão de favoritar -->
                 <button class="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
@@ -588,12 +525,12 @@
                 </button>
               </div>
           </div>
-      </div>
+  </div>
   
       <!--BOX 2 -->
-      <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+  <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         <!-- Imagem do produto -->
-        <img src="/site/public/exemplo3.png" alt="COLAR EXEMPLO - COL0123" class=" w-full object-cover ">
+        <img src="/site/public/exemplo3.png" alt="COLAR EXEMPLO - COL0123" class="object-cover mb-5" style="width: 275px;">
 
         <!-- Informações do produto -->
         <div class="p-4 bg-gray-100">
@@ -643,11 +580,11 @@
               </button>
             </div>
         </div>
-    </div>
+  </div>
     <!--BOX 3-->
-    <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+  <div class="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
       <!-- Imagem do produto -->
-      <img src="/site/public/exemplo2.png" alt="COLAR EXEMPLO - COL0123" class=" w-full object-cover">
+      <img src="/site/public/exemplo2.png" alt="COLAR EXEMPLO - COL0123" class=" w-full object-cover" style="margin-bottom: 26.5px;">
 
       <!-- Informações do produto -->
       <div class="p-4 bg-gray-100">
@@ -739,10 +676,12 @@
 
         <div class="flex gap-4">
           <!-- Botão de compra -->
-          <button class="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+          <a href="">
+            <button class="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
               <i class="fas fa-shopping-bag mr-2 text-white"></i>
               COMPRAR
           </button>
+          </a>
       
           <!-- Botão de favoritar -->
           <button class="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
@@ -751,7 +690,7 @@
           </button>
         </div>
     </div>
-</div>     
+  </div>     
 </div>
 <!--FORMULARIO-->
 <div class="flex justify-center bg-gray-200 py-8">
@@ -969,7 +908,6 @@
 </div>
 
 <!-- RODAPÉ-->
-
 <footer class="py-8">
   <div class="container mx-auto text-center">
     <p class="text-sm mb-4">
@@ -979,45 +917,5 @@
   </div>
 </footer>
 
-      
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-      // JavaScript para mostrar/ocultar submenus ao passar o mouse
-      document.querySelectorAll(".relative").forEach((item) => {
-        item.addEventListener("mouseenter", () => {
-          const submenu = item.querySelector(".absolute");
-          submenu.classList.remove("hidden");
-        });
-
-        item.addEventListener("mouseleave", () => {
-          const submenu = item.querySelector(".absolute");
-          submenu.classList.add("hidden");
-        });
-      });
-    </script>
-  </body>
+</body>
 </html>
