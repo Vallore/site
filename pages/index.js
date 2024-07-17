@@ -309,17 +309,11 @@ const Home = () => {
         <p className="text-4xl text-yellow-300">confira nossos lançamentos</p>
       </div>
 
-      {/* BOXES DE PRODUTOS */}
       <div className="flex flex-wrap justify-center gap-4">
-      {/* Box 1 */}
-      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-2">
+      {/* BOX 1 */}
+      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img
-          src="/exemplo1.png"
-          alt="COLAR EXEMPLO - COL0123"
-          className="object-cover mb-5"
-          style={{ width: 294 }}
-        />
+        <img src="/exemplo1.png" alt="COLAR EXEMPLO - COL0123" className="object-cover mb-5" style={{ width: 294 }} />
 
         {/* Informações do produto */}
         <div className="p-4 bg-gray-100">
@@ -329,12 +323,7 @@ const Home = () => {
           {/* Avaliações */}
           <div className="flex items-center mb-2">
             {[...Array(5)].map((_, index) => (
-              <svg
-                key={index}
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
+              <svg key={index} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 fill-current" viewBox="0 0 20 20">
                 <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
               </svg>
             ))}
@@ -342,19 +331,13 @@ const Home = () => {
           </div>
 
           {/* Preço original */}
-          <p className="text-gray-700 text-2xl font-bold mb-2">
-            <strong>R$199,99</strong>
-          </p>
+          <p className="text-gray-700 text-2xl font-bold mb-2"><strong>R$199,99</strong></p>
 
           {/* Preço com desconto no Pix */}
-          <p className="text-gray-600 mb-2">
-            <strong>R$99,99</strong> à vista com desconto no Pix
-          </p>
+          <p className="text-gray-600 mb-2"><strong>R$99,99</strong> à vista com desconto no Pix</p>
 
           {/* Opções de parcelamento */}
-          <p className="text-gray-600 mb-4">
-            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
-          </p>
+          <p className="text-gray-600 mb-4">ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros</p>
 
           <div className="flex gap-4">
             {/* Botão de compra */}
@@ -374,15 +357,10 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Box 2 */}
+      {/* BOX 2 */}
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img
-          src="/exemplo3.png"
-          alt="COLAR EXEMPLO - COL0123"
-          className="object-cover mb-5"
-          style={{ width: 275 }}
-        />
+        <img src="/exemplo3.png" alt="COLAR EXEMPLO - COL0123" className="object-cover mb-5" style={{ width: 275 }} />
 
         {/* Informações do produto */}
         <div className="p-4 bg-gray-100">
@@ -392,12 +370,7 @@ const Home = () => {
           {/* Avaliações */}
           <div className="flex items-center mb-2">
             {[...Array(5)].map((_, index) => (
-              <svg
-                key={index}
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
+              <svg key={index} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 fill-current" viewBox="0 0 20 20">
                 <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
               </svg>
             ))}
@@ -405,19 +378,13 @@ const Home = () => {
           </div>
 
           {/* Preço original */}
-          <p className="text-gray-700 text-2xl font-bold mb-2">
-            <strong>R$199,99</strong>
-          </p>
+          <p className="text-gray-700 text-2xl font-bold mb-2"><strong>R$199,99</strong></p>
 
           {/* Preço com desconto no Pix */}
-          <p className="text-gray-600 mb-2">
-            <strong>R$99,99</strong> à vista com desconto no Pix
-          </p>
+          <p className="text-gray-600 mb-2"><strong>R$99,99</strong> à vista com desconto no Pix</p>
 
           {/* Opções de parcelamento */}
-          <p className="text-gray-600 mb-4">
-            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
-          </p>
+          <p className="text-gray-600 mb-4">ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros</p>
 
           <div className="flex gap-4">
             {/* Botão de compra */}
@@ -435,15 +402,10 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Box 3 */}
+      {/* BOX 3 */}
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img
-          src="/exemplo2.png"
-          alt="COLAR EXEMPLO - COL0123"
-          className="w-full object-cover"
-          style={{ marginBottom: 26.5 }}
-        />
+        <img src="/exemplo2.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
 
         {/* Informações do produto */}
         <div className="p-4 bg-gray-100">
@@ -453,12 +415,7 @@ const Home = () => {
           {/* Avaliações */}
           <div className="flex items-center mb-2">
             {[...Array(5)].map((_, index) => (
-              <svg
-                key={index}
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
+              <svg key={index} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 fill-current" viewBox="0 0 20 20">
                 <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
               </svg>
             ))}
@@ -466,19 +423,13 @@ const Home = () => {
           </div>
 
           {/* Preço original */}
-          <p className="text-gray-700 text-2xl font-bold mb-2">
-            <strong>R$199,99</strong>
-          </p>
+          <p className="text-gray-700 text-2xl font-bold mb-2"><strong>R$199,99</strong></p>
 
           {/* Preço com desconto no Pix */}
-          <p className="text-gray-600 mb-2">
-            <strong>R$99,99</strong> à vista com desconto no Pix
-          </p>
+          <p className="text-gray-600 mb-2"><strong>R$99,99</strong> à vista com desconto no Pix</p>
 
           {/* Opções de parcelamento */}
-          <p className="text-gray-600 mb-4">
-            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
-          </p>
+          <p className="text-gray-600 mb-4">ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros</p>
 
           <div className="flex gap-4">
             {/* Botão de compra */}
@@ -496,14 +447,10 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Box 4 */}
+      {/* BOX 4 */}
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img
-          src="/exemplo4.png"
-          alt="COLAR EXEMPLO - COL0123"
-          className="w-full object-cover"
-        />
+        <img src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
 
         {/* Informações do produto */}
         <div className="p-4 bg-gray-100">
@@ -513,12 +460,7 @@ const Home = () => {
           {/* Avaliações */}
           <div className="flex items-center mb-2">
             {[...Array(5)].map((_, index) => (
-              <svg
-                key={index}
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-yellow-500 fill-current"
-                viewBox="0 0 20 20"
-              >
+              <svg key={index} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500 fill-current" viewBox="0 0 20 20">
                 <path d="M10 1l2.45 6.3L18 8.25l-5 4.22L15.55 19 10 15.4 4.45 19l1.55-6.53-5-4.22L7.55 7.3 10 1z" />
               </svg>
             ))}
@@ -526,19 +468,13 @@ const Home = () => {
           </div>
 
           {/* Preço original */}
-          <p className="text-gray-700 text-2xl font-bold mb-2">
-            <strong>R$199,99</strong>
-          </p>
+          <p className="text-gray-700 text-2xl font-bold mb-2"><strong>R$199,99</strong></p>
 
           {/* Preço com desconto no Pix */}
-          <p className="text-gray-600 mb-2">
-            <strong>R$99,99</strong> à vista com desconto no Pix
-          </p>
+          <p className="text-gray-600 mb-2"><strong>R$99,99</strong> à vista com desconto no Pix</p>
 
           {/* Opções de parcelamento */}
-          <p className="text-gray-600 mb-4">
-            ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros
-          </p>
+          <p className="text-gray-600 mb-4">ou em até <strong>10x</strong> de <strong>R$11,99</strong> sem juros</p>
 
           <div className="flex gap-4">
             {/* Botão de compra */}
