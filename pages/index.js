@@ -310,9 +310,9 @@ const Home = () => {
       </div>
 
       {/* BOXES DE PRODUTOS */}
-      <div className="flex flex-wrap justify-center gap-4 p-8">
+      <div className="flex flex-wrap justify-center gap-4">
       {/* Box 1 */}
-      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-2">
         {/* Imagem do produto */}
         <img
           src="/exemplo1.png"
@@ -358,7 +358,7 @@ const Home = () => {
 
           <div className="flex gap-4">
             {/* Botão de compra */}
-            <a href="/produto1.html">
+            <a href="/produto1.js">
               <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
                 <i className="fas fa-shopping-bag mr-2 text-white"></i>
                 COMPRAR
@@ -564,6 +564,38 @@ const Home = () => {
           VEJA NOSSOS PRODUTOS POR CATEGORIA
         </h2>
       </div>
+      <div class="flex justify-center">
+  <div class="flex flex-wrap">
+    <a href="#">
+      <img
+        src="/Prancheta 1.png"
+        alt="Imagem 1"
+        class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
+      />
+    </a>
+    <a href="http://" target="_blank" rel="noopener noreferrer">
+      <img
+        src="/Prancheta 2.png"
+        alt="Imagem 2"
+        class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
+      />
+    </a>
+    <a href="http://" target="_blank" rel="noopener noreferrer">
+      <img
+        src="/Prancheta 3.png"
+        alt="Imagem 3"
+        class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
+      />
+    </a>
+    <a href="http://" target="_blank" rel="noopener noreferrer">
+      <img
+        src="/Prancheta 4.png"
+        alt="Imagem 4"
+        class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
+      />
+    </a>
+  </div>
+</div>
 
       {/* MAIS VENDIDAS */}
       <div className="text-center mb-8 mt-10">
@@ -579,7 +611,7 @@ const Home = () => {
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
         <img
-          src="/site/public/exemplo1.png"
+          src="/exemplo1.png"
           alt="COLAR EXEMPLO - COL0123"
           className="object-cover mb-5"
           style={{ width: 294 }}
