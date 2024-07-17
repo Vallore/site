@@ -378,7 +378,7 @@ const Home = () => {
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
         <img
-          src="/site/public/exemplo3.png"
+          src="/exemplo3.png"
           alt="COLAR EXEMPLO - COL0123"
           className="object-cover mb-5"
           style={{ width: 275 }}
@@ -439,7 +439,7 @@ const Home = () => {
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
         <img
-          src="/site/public/exemplo2.png"
+          src="/exemplo2.png"
           alt="COLAR EXEMPLO - COL0123"
           className="w-full object-cover"
           style={{ marginBottom: 26.5 }}
@@ -500,7 +500,7 @@ const Home = () => {
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
         <img
-          src="/site/public/exemplo4.png"
+          src="/exemplo4.png"
           alt="COLAR EXEMPLO - COL0123"
           className="w-full object-cover"
           style={{ marginBottom: 26.5 }}
@@ -642,7 +642,7 @@ const Home = () => {
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
         <img
-          src="/site/public/exemplo3.png"
+          src="/exemplo3.png"
           alt="COLAR EXEMPLO - COL0123"
           className="object-cover mb-5"
           style={{ width: 275 }}
@@ -703,7 +703,7 @@ const Home = () => {
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
         <img
-          src="/site/public/exemplo2.png"
+          src="/exemplo2.png"
           alt="COLAR EXEMPLO - COL0123"
           className="w-full object-cover"
           style={{ marginBottom: 26.5 }}
@@ -764,7 +764,7 @@ const Home = () => {
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
         <img
-          src="/site/public/exemplo4.png"
+          src="/exemplo4.png"
           alt="COLAR EXEMPLO - COL0123"
           className="w-full object-cover"
           style={{ marginBottom: 26.5 }}
@@ -826,7 +826,7 @@ const Home = () => {
       <div className="relative">
         {/* Imagem com sobreposição */}
         <img
-          src="/site/public/novidades 1.png"
+          src="/novidades 1.png"
           alt="Imagem Newsletter"
           className="inset-0 z-10 w-461 h-369 object-cover"
         />
@@ -1053,10 +1053,10 @@ const Home = () => {
               <img src="/site" class="w-72" alt="icone das bandeiras dos cartões"></img>
             </div>
             <div class="flex items-center mb-4">
-              <img src="/site/public/pix 1.png" alt="icone de pix"></img>
-              <img src="/site/public/boleto 1.png" alt="icone de boleto"></img>
+              <img src="/pix 1.png" alt="icone de pix"></img>
+              <img src="/boleto 1.png" alt="icone de boleto"></img>
             </div>
-            <img src="/site/public/compra-segura.png" class="w-full" alt="icone da compra segura"></img>
+            <img src="/compra-segura.png" class="w-full" alt="icone da compra segura"></img>
           </div>
         </div>
       </div>
