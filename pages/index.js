@@ -71,7 +71,7 @@ const Home = () => {
           />
         </div>
 
-        {/* Divisão para o Busca e outros ícones */}
+        {/* Divisão para o Busca e outros ícones  */}
         <div className="flex items-center space-x-10">
           {/* Ícone de busca */}
           <p className="font-bold">
