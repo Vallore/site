@@ -64,7 +64,7 @@ const Home = () => {
         </div>
 
         <div>
-          <img
+          <image
             src="/logo.png"
             alt="Logo da empresa"
             className="w-32 h-32 mt-10"
@@ -270,7 +270,7 @@ const Home = () => {
 
       {/*CAIXA DE FRETE*/}
       <div className="relative">
-        <img
+        <image
           src="/slider 1.png"
           alt="Imagem de uma mulher usando joias Vallore, como brinco e colar"
           className="w-full object-cover border-t-4 border-b-4 border-yellow-400 relative"
@@ -313,7 +313,7 @@ const Home = () => {
         {/* BOX 1 */}
         <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
+        <image src="/exemplo1.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
 
         {/* Informações do produto */}
         <div className="p-4 bg-gray-100">
@@ -357,7 +357,7 @@ const Home = () => {
        {/* BOX 2 */}
        <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
+        <image src="/exemplo3.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
 
         {/* Informações do produto */}
         <div className="p-4 bg-gray-100">
@@ -402,7 +402,7 @@ const Home = () => {
        {/* BOX 3 */}
        <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
+        <image src="/exemplo2.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
 
         {/* Informações do produto */}
         <div className="p-4 bg-gray-100">
@@ -447,7 +447,7 @@ const Home = () => {
       {/* BOX 4 */}
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
+        <image src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
 
         {/* Informações do produto */}
         <div className="p-4 bg-gray-100">
@@ -499,28 +499,28 @@ const Home = () => {
       <div className="flex justify-center">
   <div className="flex flex-wrap">
     <a href="#">
-      <img
+      <image
         src="/Prancheta 1.png"
         alt="Imagem 1"
         className="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
       />
     </a>
     <a href="http://" target="_blank" rel="noopener noreferrer">
-      <img
+      <image
         src="/Prancheta 2.png"
         alt="Imagem 2"
         className="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
       />
     </a>
     <a href="http://" target="_blank" rel="noopener noreferrer">
-      <img
+      <image
         src="/Prancheta 3.png"
         alt="Imagem 3"
         className="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
       />
     </a>
     <a href="http://" target="_blank" rel="noopener noreferrer">
-      <img
+      <image
         src="/Prancheta 4.png"
         alt="Imagem 4"
         className="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
@@ -542,7 +542,7 @@ const Home = () => {
       {/* Box 1 */}
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img
+        <image
           src="/exemplo1.png"
           alt="COLAR EXEMPLO - COL0123"
           className="object-cover mb-5"
@@ -605,7 +605,7 @@ const Home = () => {
       {/* Box 2 */}
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img
+        <image
           src="/exemplo3.png"
           alt="COLAR EXEMPLO - COL0123"
           className="object-cover mb-5"
@@ -666,7 +666,7 @@ const Home = () => {
       {/* Box 3 */}
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img
+        <image
           src="/exemplo2.png"
           alt="COLAR EXEMPLO - COL0123"
           className="w-full object-cover"
@@ -727,7 +727,7 @@ const Home = () => {
       {/* Box 4 */}
       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img
+        <image
           src="/exemplo4.png"
           alt="COLAR EXEMPLO - COL0123"
           className="w-full object-cover"
@@ -788,7 +788,7 @@ const Home = () => {
       {/* Coluna da imagem */}
       <div className="relative">
         {/* Imagem com sobreposição */}
-        <img
+        <image
           src="/novidades 1.png"
           alt="Imagem Newsletter"
           className="inset-0 z-10 w-461 h-369 object-cover"
@@ -1013,13 +1013,13 @@ const Home = () => {
           <div className="p-6">
             <h3 className="text-xl font-bold">Formas de Pagamento</h3>
             <div className="flex items-center mb-4">
-              <img src="/BANDEIRAS_CARTAO" className="w-72" alt="icone das bandeiras dos cartões"></img>
+              <image src="/BANDEIRAS_CARTAO" className="w-72" alt="icone das bandeiras dos cartões"></image>
             </div>
             <div className="flex items-center mb-4">
-              <img src="/pix 1.png" alt="icone de pix"></img>
-              <img src="/boleto 1.png" alt="icone de boleto"></img>
+              <image src="/pix 1.png" alt="icone de pix"></image>
+              <image src="/boleto 1.png" alt="icone de boleto"></image>
             </div>
-            <img src="/compra-segura.png" className="w-full" alt="icone da compra segura"></img>
+            <image src="/compra-segura.png" className="w-full" alt="icone da compra segura"></image>
           </div>
         </div>
       </div>
