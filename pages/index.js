@@ -310,10 +310,10 @@ const Home = () => {
       </div>
 
       <div className="flex flex-wrap justify-center gap-4">
-      {/* BOX 1 */}
-      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+        {/* BOX 1 */}
+        <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img src="/exemplo1.png" alt="COLAR EXEMPLO - COL0123" className="object-cover mb-5" style={{ width: 294 }} />
+        <img src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
 
         {/* Informações do produto */}
         <div className="p-4 bg-gray-100">
@@ -341,12 +341,10 @@ const Home = () => {
 
           <div className="flex gap-4">
             {/* Botão de compra */}
-            <a href="/produto1.js">
-              <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
-                <i className="fas fa-shopping-bag mr-2 text-white"></i>
-                COMPRAR
-              </button>
-            </a>
+            <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+              <i className="fas fa-shopping-bag mr-2 text-white"></i>
+              COMPRAR
+            </button>
 
             {/* Botão de favoritar */}
             <button className="flex items-center justify-center border-2 border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
@@ -356,11 +354,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* BOX 2 */}
-      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+       {/* BOX 2 */}
+       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img src="/exemplo3.png" alt="COLAR EXEMPLO - COL0123" className="object-cover mb-5" style={{ width: 275 }} />
+        <img src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
 
         {/* Informações do produto */}
         <div className="p-4 bg-gray-100">
@@ -402,10 +399,10 @@ const Home = () => {
         </div>
       </div>
 
-      {/* BOX 3 */}
-      <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
+       {/* BOX 3 */}
+       <div className="max-w-80 bg-white border border-yellow-300 overflow-hidden mb-20">
         {/* Imagem do produto */}
-        <img src="/exemplo2.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
+        <img src="/exemplo4.png" alt="COLAR EXEMPLO - COL0123" className="w-full object-cover mb-5" />
 
         {/* Informações do produto */}
         <div className="p-4 bg-gray-100">
