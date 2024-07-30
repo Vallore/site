@@ -496,34 +496,34 @@ const Home = () => {
           VEJA NOSSOS PRODUTOS POR CATEGORIA
         </h2>
       </div>
-      <div class="flex justify-center">
-  <div class="flex flex-wrap">
+      <div className="flex justify-center">
+  <div className="flex flex-wrap">
     <a href="#">
       <img
         src="/Prancheta 1.png"
         alt="Imagem 1"
-        class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
+        className="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
       />
     </a>
     <a href="http://" target="_blank" rel="noopener noreferrer">
       <img
         src="/Prancheta 2.png"
         alt="Imagem 2"
-        class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
+        className="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
       />
     </a>
     <a href="http://" target="_blank" rel="noopener noreferrer">
       <img
         src="/Prancheta 3.png"
         alt="Imagem 3"
-        class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
+        className="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
       />
     </a>
     <a href="http://" target="_blank" rel="noopener noreferrer">
       <img
         src="/Prancheta 4.png"
         alt="Imagem 4"
-        class="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
+        className="w-300 h-300 object-cover m-2 border-2 border-yellow-300"
       />
     </a>
   </div>
@@ -977,15 +977,15 @@ const Home = () => {
     </div>
            
      {/* Formas de Pagamento */}
-     <div class="pt-10">
-        <div class="max-w-screen-2xl mx-auto">
-          <div class="shadow-xl inset-x-0 top-0 h-0.5 bg-yellow-300"></div>
+     <div className="pt-10">
+        <div className="max-w-screen-2xl mx-auto">
+          <div className="shadow-xl inset-x-0 top-0 h-0.5 bg-yellow-300"></div>
         </div>
-        <div class="flex justify-center md:grid-cols-3 gap-8">
+        <div className="flex justify-center md:grid-cols-3 gap-8">
           {/* Caixa Institucional */}
-          <div class=" p-6">
-            <h3 class="text-xl font-bold mb-4">Institucional</h3>
-            <p class="text-gray-700 text-lg">
+          <div className=" p-6">
+            <h3 className="text-xl font-bold mb-4">Institucional</h3>
+            <p className="text-gray-700 text-lg">
               Quem somos<br />
               Formas de pagamento<br />
               Política de privacidade<br />
@@ -999,39 +999,39 @@ const Home = () => {
           </div>
 
           {/* Caixa Atendimento */}
-          <div class="p-6">
-            <h3 class="text-xl font-bold">Atendimento</h3>
-            <p class="text-gray-700 mt-4">
-              <p class="pb-2"><strong>WhatsApp</strong> (35) 3333-333</p> 
-              <p class="pb-2"><strong>Telefone</strong> (35) 3333-3333</p>
-              <p class="pb-2"><strong>Email: </strong> contato@valloresemijoias.com.br</p>
-              <span class="text-gray-300">Horário de funcionamento: de segunda à sexta,<br />das 9h às 18h.</span>
+          <div className="p-6">
+            <h3 className="text-xl font-bold">Atendimento</h3>
+            <p className="text-gray-700 mt-4">
+              <p className="pb-2"><strong>WhatsApp</strong> (35) 3333-333</p> 
+              <p className="pb-2"><strong>Telefone</strong> (35) 3333-3333</p>
+              <p className="pb-2"><strong>Email: </strong> contato@valloresemijoias.com.br</p>
+              <span className="text-gray-300">Horário de funcionamento: de segunda à sexta,<br />das 9h às 18h.</span>
             </p>
           </div>
 
           {/* Caixa Formas de Pagamento */}
-          <div class="p-6">
-            <h3 class="text-xl font-bold">Formas de Pagamento</h3>
-            <div class="flex items-center mb-4">
-              <img src="/site" class="w-72" alt="icone das bandeiras dos cartões"></img>
+          <div className="p-6">
+            <h3 className="text-xl font-bold">Formas de Pagamento</h3>
+            <div className="flex items-center mb-4">
+              <img src="/BANDEIRAS_CARTAO" className="w-72" alt="icone das bandeiras dos cartões"></img>
             </div>
-            <div class="flex items-center mb-4">
+            <div className="flex items-center mb-4">
               <img src="/pix 1.png" alt="icone de pix"></img>
               <img src="/boleto 1.png" alt="icone de boleto"></img>
             </div>
-            <img src="/compra-segura.png" class="w-full" alt="icone da compra segura"></img>
+            <img src="/compra-segura.png" className="w-full" alt="icone da compra segura"></img>
           </div>
         </div>
       </div>
 
       {/* Rodapé */}
       <footer>
-        <div class="shadow-lg h-px bg-gray-300 mb-8"></div>
-        <div class="container mx-auto text-center">
-          <p class="text-sm mb-4 font-semibold">
+        <div className="shadow-lg h-px bg-gray-300 mb-8"></div>
+        <div className="container mx-auto text-center">
+          <p className="text-sm mb-4 font-semibold">
             Copyright (c) 2024 - Vallore Joias e Semijoias de Luxo. Todos os direitos reservados. Os preços, promoções, condições de pagamento, frete e produtos são válidos exclusivamente para compras realizadas via internet. Fotos meramente ilustrativas. Vallore Joias e Semijoias de Luxo - CNPJ: 00.000.000/0000-00 - Endereço da loja física, nº 000, Centro - São Lourenço/MG
           </p>
-          <p class="font-bold">Desenvolvido por Rixxer Corp</p>
+          <p className="font-bold">Desenvolvido por Rixxer Corp</p>
         </div>
       </footer>
     </div>
