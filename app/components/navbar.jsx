@@ -6,7 +6,6 @@ export default function Navbar() {
       </div>
 
       <div className="flex justify-center space-x-10 p-5">
-        {/* Item de menu "Lançamentos" */}
         <div className="relative">
           <a
             href="#"
@@ -14,7 +13,6 @@ export default function Navbar() {
           >
             Lançamentos
           </a>
-          {/* Submenu "Lançamentos" */}
           <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
             <a
               href="#"
@@ -31,7 +29,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Item de menu "Brincos" */}
         <div className="relative">
           <a
             href="#"
@@ -39,7 +36,6 @@ export default function Navbar() {
           >
             Brincos
           </a>
-          {/* Submenu "Brincos" */}
           <div className="absolute hidden bg-white shadow-xl mt-2 w-48 submenu">
             <a
               href="#"
@@ -56,7 +52,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Item de menu "Anéis" */}
         <div className="relative">
           <a
             href="#"
@@ -64,7 +59,6 @@ export default function Navbar() {
           >
             Anéis
           </a>
-          {/* Submenu "Anéis" */}
           <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
             <a
               href="#"
@@ -81,7 +75,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Item de menu "Colares" */}
         <div className="relative">
           <a
             href="#"
@@ -89,7 +82,6 @@ export default function Navbar() {
           >
             Colares
           </a>
-          {/* Submenu "Colares" */}
           <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
             <a
               href="#"
@@ -106,7 +98,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Item de menu "Pulseiras" */}
         <div className="relative">
           <a
             href="#"
@@ -114,7 +105,6 @@ export default function Navbar() {
           >
             Pulseiras
           </a>
-          {/* Submenu "Pulseiras" */}
           <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
             <a
               href="#"
@@ -131,7 +121,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Item de menu "Conjuntos" */}
         <div className="relative">
           <a
             href="#"
@@ -139,7 +128,6 @@ export default function Navbar() {
           >
             Conjuntos
           </a>
-          {/* Submenu "Conjuntos" */}
           <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
             <a
               href="#"
@@ -156,7 +144,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Item de menu "+Categorias" */}
         <div className="relative">
           <a
             href="#"
@@ -164,7 +151,6 @@ export default function Navbar() {
           >
             +Categorias
           </a>
-          {/* Submenu "+Categorias" */}
           <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
             <a
               href="#"
