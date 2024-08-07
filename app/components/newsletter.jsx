@@ -2,42 +2,33 @@ export default function Newsletter() {
   return (
     <>
       <div className="flex justify-center bg-gray-200 py-8">
-        {/* Coluna da imagem */}
         <div className="relative">
-          {/* Imagem com sobreposição */}
           <img
             src="/novidades 1.png"
             alt="Imagem Newsletter"
             className="inset-0 z-10 w-461 h-369 object-cover"
           />
-          {/* Caixa retangular esquerda superior */}
           <div
             className="absolute left-0 top-0 z-0"
             style={{ width: "70px", height: "319px", background: "#F2E205" }}
           ></div>
 
-          {/* Caixa retangular direita inferior */}
           <div
             className="absolute right-0 bottom-0 z-0"
             style={{ width: "42px", height: "191px", background: "#F2E205" }}
           ></div>
         </div>
 
-        {/* Coluna do formulário */}
         <div className="flex flex-col justify-center ml-8">
-          {/* Título */}
           <h2 className="text-4xl font-bold mb-4 text-center">NEWSLETTER</h2>
 
-          {/* Descrição */}
           <p className="mb-5 text-center text-2xl text-yellow-400 font-bold">
             Que tal receber as novidades de nossa loja
             <br />
             em seu e-mail ou no seu WhatsApp?
           </p>
 
-          {/* Formulário */}
           <form className="flex flex-col items-center">
-            {/* Campo Seu nome */}
             <div className="mb-4">
               <label
                 htmlFor="nome"
@@ -53,7 +44,6 @@ export default function Newsletter() {
               />
             </div>
 
-            {/* Campo Seu e-mail */}
             <div className="mb-4">
               <label
                 htmlFor="email"
@@ -69,7 +59,6 @@ export default function Newsletter() {
               />
             </div>
 
-            {/* Campo Seu telefone */}
             <div className="mb-4">
               <label
                 htmlFor="telefone"
@@ -85,7 +74,6 @@ export default function Newsletter() {
               />
             </div>
 
-            {/* Botão de cadastro */}
             <button
               type="submit"
               className="bg-yellow-300 text-yellow-700 font-bold px-4 py-2 rounded-md hover:bg-yellow-600 mt-4 hover:text-white"

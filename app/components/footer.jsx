@@ -29,7 +29,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Caixa Atendimento */}
           <div className="p-6">
             <h3 className="text-xl font-bold">Atendimento</h3>
             <p className="text-gray-700 mt-4">
