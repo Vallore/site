@@ -13,7 +13,7 @@ export default function Social() {
         </div>
 
         <div className="flex items-center mr-8">
-          <span className="text-3xl text-blue-600 mr-2">
+          <span className="text-3xl text-yellow-300 mr-2">
             <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
           </span>
           <p className="text-lg text-gray-700">
