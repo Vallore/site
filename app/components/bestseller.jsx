@@ -10,7 +10,7 @@ export default function Casting() {
         <p className="text-2xl text-yellow-500">Confira as queridinhas de nossos clientes</p>
       </div>
 
-      <div className="flex justify-center gap-6">
+      <div className="flex justify-center gap-6 mb-10">
       <div className="max-w-sm bg-white border border-yellow-300 overflow-hidden">
       <img
         src="/exemplo1.png"

@@ -3,10 +3,10 @@ export default function Newsletter() {
     <>
       <div className="flex justify-center bg-gray-200 py-8">
         <div className="relative">
-          <img
+          <img 
             src="/novidades 1.png"
             alt="Imagem Newsletter"
-            className="inset-0 z-10 w-461 h-369 object-cover"
+            className="inset-0 z-10 object-cover mr-20"
           />
           <div
             className="absolute left-0 top-0 z-0"
@@ -19,10 +19,10 @@ export default function Newsletter() {
           ></div>
         </div>
 
-        <div className="flex flex-col justify-center ml-8">
+        <div className="flex flex-col justify-center ml-20">
           <h2 className="text-4xl font-bold mb-4 text-center">NEWSLETTER</h2>
 
-          <p className="mb-5 text-center text-2xl text-yellow-400 font-bold">
+          <p className="mb-5 text-center text-2xl text-yellow-500">
             Que tal receber as novidades de nossa loja
             <br />
             em seu e-mail ou no seu WhatsApp?
@@ -76,7 +76,7 @@ export default function Newsletter() {
 
             <button
               type="submit"
-              className="bg-yellow-300 text-yellow-700 font-bold px-4 py-2 rounded-md hover:bg-yellow-600 mt-4 hover:text-white"
+              className="bg-yellow-400 text-yellow-700 font-bold px-12 py-2 hover:bg-yellow-600 mt-4 hover:text-white"
             >
               QUERO ME CADASTRAR NA LISTA VIP!
             </button>

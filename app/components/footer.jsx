@@ -53,7 +53,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold">Formas de Pagamento</h3>
             <div className="flex items-center mb-4">
               <img
-                src="/BANDEIRAS_CARTAO"
+                src="/BANDEIRAS_CARTAO.png"
                 className="w-72"
                 alt="icone das bandeiras dos cartões"
               ></img>

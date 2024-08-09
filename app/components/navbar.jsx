@@ -1,169 +1,85 @@
 export default function Navbar() {
   return (
-    <div className="pt-6 relative">
+    <div className="relative">
       <div className="max-w-screen-md mx-auto">
         <div className="shadow-lg inset-x-0 top-0 h-px bg-gray-300"></div>
       </div>
 
       <div className="flex justify-center space-x-10 p-5">
-        <div className="relative">
-          <a
-            href="#"
-            className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-          >
+        {/* Dropdown Item */}
+        <div className="relative inline-block group">
+          <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Lançamentos
-          </a>
-          <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Ver todos
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Novidades
-            </a>
+          </button>
+          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Ver todos</a>
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Novidades</a>
           </div>
         </div>
 
-        <div className="relative">
-          <a
-            href="#"
-            className="block py-3 px-4 text-lg font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-          >
+        {/* Dropdown Item */}
+        <div className="relative inline-block group">
+          <button className="py-3 px-4 text-lg font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Brincos
-          </a>
-          <div className="absolute hidden bg-white shadow-xl mt-2 w-48 submenu">
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Argolas
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Pendentes
-            </a>
+          </button>
+          <div className="absolute hidden mt-2 bg-white shadow-xl min-w-[160px] z-10 group-hover:block">
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Argolas</a>
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Pendentes</a>
           </div>
         </div>
 
-        <div className="relative">
-          <a
-            href="#"
-            className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-          >
+        {/* Dropdown Item */}
+        <div className="relative inline-block group">
+          <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Anéis
-          </a>
-          <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Solitários
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Aparadores
-            </a>
+          </button>
+          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Solitários</a>
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Aparadores</a>
           </div>
         </div>
 
-        <div className="relative">
-          <a
-            href="#"
-            className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-          >
+        {/* Dropdown Item */}
+        <div className="relative inline-block group">
+          <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Colares
-          </a>
-          <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Chokers
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Longos
-            </a>
+          </button>
+          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Chokers</a>
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Longos</a>
           </div>
         </div>
 
-        <div className="relative">
-          <a
-            href="#"
-            className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-          >
+        {/* Dropdown Item */}
+        <div className="relative inline-block group">
+          <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Pulseiras
-          </a>
-          <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Pulseiras de Prata
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Pulseiras de Ouro
-            </a>
+          </button>
+          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Pulseiras de Prata</a>
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Pulseiras de Ouro</a>
           </div>
         </div>
 
-        <div className="relative">
-          <a
-            href="#"
-            className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-          >
+        {/* Dropdown Item */}
+        <div className="relative inline-block group">
+          <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Conjuntos
-          </a>
-          <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Conjuntos de Pedras
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Conjuntos de Diamantes
-            </a>
+          </button>
+          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Conjuntos de Pedras</a>
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Conjuntos de Diamantes</a>
           </div>
         </div>
 
-        <div className="relative">
-          <a
-            href="#"
-            className="block py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600"
-          >
+        {/* Dropdown Item */}
+        <div className="relative inline-block group">
+          <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             +Categorias
-          </a>
-          <div className="absolute hidden bg-white shadow-lg mt-2 w-48 submenu">
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Categorias Extras 1
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100"
-            >
-              Categorias Extras 2
-            </a>
+          </button>
+          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Categorias Extras 1</a>
+            <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Categorias Extras 2</a>
           </div>
         </div>
       </div>
