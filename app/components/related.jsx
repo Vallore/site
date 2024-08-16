@@ -6,8 +6,8 @@ export default function Casting() {
   return (
     <>
       <div className="text-center mb-8 mt-10">
-        <h2 className="text-3xl font-bold text-black">MAIS VENDIDAS</h2>
-        <p className="text-2xl text-yellow-500">Confira as queridinhas de nossos clientes</p>
+        <h2 className="text-3xl font-bold text-black">PRODUTOS RELACIONADOS</h2>
+        <p className="text-2xl text-yellow-500">Produtos relacionados à sua escolha</p>
       </div>
 
       <div className="flex justify-center gap-6 mb-10">
