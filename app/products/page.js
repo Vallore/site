@@ -47,7 +47,7 @@ export default function Products() {
                 />
               </div>
 
-              <div className="ml-6 flex items-start">
+              <div className="ml-6 flex items-start border-yellow-300">
                 <img
                   src="/exemplo1.png"
                   alt="Imagem do Produto"
@@ -83,55 +83,58 @@ export default function Products() {
                     ou em até 10x de R$11,90 sem juros
                   </p>
                 </div>
-
                 <div className="mb-6">
-                  <div>
-                    <p className="font-semibold text-gray-800 mb-2">
-                      Cor do item:
-                    </p>
-                    <div className="flex space-x-2">
-                      <div className="bg-yellow-300 rounded-lg py-1 px-4">
-                        <p className="text-white">COR 1</p>
-                      </div>
-                      <div className="bg-yellow-300 rounded-lg py-1 px-4">
-                        <p className="text-white">COR 2</p>
-                      </div>
-                      <div className="bg-yellow-300 rounded-lg py-1 px-4">
-                        <p className="text-white">COR 3</p>
-                      </div>
-                    </div>
-                  </div>
+      {/* Seletor de Cor */}
+      <div>
+        <p className="font-semibold text-gray-800 mb-2">Cor do item:</p>
+        <div className="flex space-x-2">
+          {['COR 1', 'COR 2', 'COR 3'].map(color => (
+            <div
+              key={color}
+              className={`cursor-pointer rounded-lg py-1 px-4 ${
+                selectedColor === color ? 'bg-yellow-500' : 'bg-yellow-300'
+              }`}
+              onClick={() => setSelectedColor(color)}
+            >
+              <p className={`text-white ${selectedColor === color ? 'font-bold' : ''}`}>
+                {color}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
 
-                  <div className="mt-4">
-                    <p className="font-semibold text-gray-800 mb-2">Tamanho:</p>
-                    <div className="flex space-x-2">
-                      <div className="bg-yellow-300 rounded-lg py-1 px-2">
-                        <p className="text-white">44</p>
-                      </div>
-                      <div className="bg-yellow-300 rounded-lg py-1 px-2">
-                        <p className="text-white">45</p>
-                      </div>
-                      <div className="bg-yellow-300 rounded-lg py-1 px-2">
-                        <p className="text-white">46</p>
-                      </div>
-                      <div className="bg-yellow-300 rounded-lg py-1 px-2">
-                        <p className="text-white">47</p>
-                      </div>
-                    </div>
-                  </div>
+      {/* Seletor de Tamanho */}
+      <div className="mt-4">
+        <p className="font-semibold text-gray-800 mb-2">Tamanho:</p>
+        <div className="flex space-x-2">
+          {['44', '45', '46', '47'].map(size => (
+            <div
+              key={size}
+              className={`cursor-pointer rounded-lg py-1 px-2 ${
+                selectedSize === size ? 'bg-yellow-500' : 'bg-yellow-300'
+              }`}
+              onClick={() => setSelectedSize(size)}
+            >
+              <p className={`text-white ${selectedSize === size ? 'font-bold' : ''}`}>
+                {size}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
 
-                  <div className="mt-4 flex items-center">
-                    <p className="font-semibold text-gray-800 mb-2 mr-2">
-                      Quantidade:
-                    </p>
-                    <button className="border-2 border-yellow-300 rounded-xl px-14 py-1 mr-2 text-center">
-                      1
-                    </button>
-                    <button className="bg-yellow-300 text-white py-1 px-5 rounded-xl text-lg">
-                      COMPRAR
-                    </button>
-                  </div>
-                </div>
+      {/* Seletor de Quantidade e Botão Comprar */}
+      <div className="mt-4 flex items-center">
+        <p className="font-semibold text-gray-800 mb-2 mr-2">Quantidade:</p>
+        <button className="border-2 border-yellow-300 rounded-xl px-14 py-1 mr-2 text-center">
+          1
+        </button>
+        <button className="bg-yellow-300 text-white py-1 px-5 rounded-xl text-lg">
+          COMPRAR
+        </button>
+      </div>
+    </div>
               </div>
             </div>
           </div>
