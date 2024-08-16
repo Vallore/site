@@ -12,7 +12,7 @@ export default function Products() {
       <Header />
       <Navbar />
 
-      <div className="Products shadow-lg bg-yellow-300">
+      <div className="Products">
         <div className="max-w-7xl mx-auto bg-white p-8">
           <div className="text-gray-600 text-sm ">
             <a href="/site/index.html" className="hover:text-gray-800">
