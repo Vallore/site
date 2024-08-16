@@ -47,15 +47,12 @@ export default function Products() {
                 />
               </div>
 
-              <div className="relative w-max h-max">
+              <div className="ml-6 flex items-start">
                 <img
                   src="/exemplo1.png"
                   alt="Imagem do Produto"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-125 cursor-pointer"
                 />
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="zoom-box absolute border-2 border-yellow-300 rounded-lg hidden"></div>
-                </div>
               </div>
 
               <div className="ml-8">
