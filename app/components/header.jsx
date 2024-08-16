@@ -8,7 +8,7 @@ import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   return (
-    <div className="flex justify-around px-32">
+    <div className="flex justify-around px-32 mt-1 mb-1">
       <div className="flex-col space-y-4 mt-10">
         <div className="flex items-center space-x-4">
           <a
