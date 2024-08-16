@@ -136,12 +136,13 @@ export default function Products() {
         <button className="bg-yellow-300 text-white py-1 px-5 rounded-xl text-lg">
           COMPRAR
         </button>
-      </div>
-    </div>
-              </div>
-            </div>
-          </div>
-        </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
         <div className="w-2/3 mx-auto mt-10">
           <div className="shadow-lg inset-x-0 top-0 h-px bg-gray-300"></div>
