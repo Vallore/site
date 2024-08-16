@@ -51,7 +51,7 @@ export default function Products() {
                 <img
                   src="/exemplo1.png"
                   alt="Imagem do Produto"
-                  className="w-max h-max border-2 border-yellow-300"
+                  className="w-max h-max border-2 border-yellow-300 transition-transform duration-300 ease-in-out transform hover:translate-x-[150%] hover:translate-y-[150%]"
                 />
               </div>
 
