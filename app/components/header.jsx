@@ -1,29 +1,55 @@
 'use client';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faPhoneAlt, faSearch, faUser, faShoppingBag, faFacebook, faGoogle } from "@fortawesome/free-solid-svg-icons";
-import { useState } from 'react'; // Importar useState do React
+import { faWhatsapp, faPhoneAlt, faSearch, faUser, faShoppingBag, faGoogle, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function Header() {
-  // Estado para controlar a visibilidade dos modais
+  // Estados para controlar a visibilidade dos modais
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [recaptchaToken, setRecaptchaToken] = useState('');
+
+  const RECAPTCHA_SITE_KEY = 'YOUR_RECAPTCHA_SITE_KEY_HERE'; // Substitua pelo seu site key do reCAPTCHA
 
   // Funções para abrir e fechar os modais
   const openSearchModal = () => setIsSearchModalOpen(true);
   const closeSearchModal = () => setIsSearchModalOpen(false);
-  
+
   const openLoginModal = () => setIsLoginModalOpen(true);
   const closeLoginModal = () => setIsLoginModalOpen(false);
-  
+
   const openRegisterModal = () => setIsRegisterModalOpen(true);
-  const closeRegisterModal = () => setIsRegisterModalOpen(false);
-  
+  const closeRegisterModal = () => {
+    setIsRegisterModalOpen(false);
+    setPassword('');
+    setConfirmPassword('');
+    setRecaptchaToken('');
+  };
+
   const openCart = () => setIsCartOpen(true);
   const closeCart = () => setIsCartOpen(false);
+
+  const handleRegisterSubmit = (e) => {
+    e.preventDefault();
+    if (password !== confirmPassword) {
+      alert("As senhas não coincidem!");
+      return;
+    }
+    if (!recaptchaToken) {
+      alert("Por favor, complete o CAPTCHA.");
+      return;
+    }
+    // Lógica para registro do usuário aqui
+    alert("Cadastro realizado com sucesso!");
+    closeRegisterModal();
+  };
 
   return (
     <div className="flex justify-around px-32 mt-1 mb-1">
@@ -65,10 +91,10 @@ export default function Header() {
           <button onClick={openSearchModal} className="cursor-pointer">
             <FontAwesomeIcon icon={faSearch} className="text-2xl text-yellow-400" />
           </button>
-          <button onClick={openLoginModal} className="cursor-pointer">
+          <button onClick={openLoginModal}>
             <FontAwesomeIcon icon={faUser} className="text-2xl text-yellow-400" />
           </button>
-          <button onClick={openCart} className="cursor-pointer">
+          <button onClick={openCart}>
             <FontAwesomeIcon icon={faShoppingBag} className="text-2xl text-yellow-400" />
           </button>
         </div>
@@ -127,38 +153,48 @@ export default function Header() {
                   />
                 </svg>
               </button>
-              <h2 className="text-xl font-bold mb-4">Login</h2>
+              <h2 className="text-xl font-bold mb-4 text-center">Entrar com e-mail e senha</h2>
               <form>
                 <input
                   type="email"
-                  placeholder="Email"
+                  placeholder="Ex.: exemplo@mail.com"
                   className="border border-gray-300 rounded-lg p-2 w-full mb-4"
                 />
-                <input
-                  type="password"
-                  placeholder="Senha"
-                  className="border border-gray-300 rounded-lg p-2 w-full mb-4"
-                />
+                <div className="relative mb-4">
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Sua senha"
+                    className="border border-gray-300 rounded-lg p-2 w-full"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2"
+                  >
+                    <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} className="text-gray-500" />
+                  </button>
+                </div>
                 <button type="submit" className="bg-yellow-400 text-white rounded-lg p-2 w-full">
                   Entrar
                 </button>
-              </form>
-              <p className="mt-4 text-center">
-                <button onClick={() => { closeLoginModal(); openRegisterModal(); }} className="text-black">
-                  Criar conta
-                </button>
-                {/* Botões de login social */}
-                <div className="flex space-x-4 mt-4">
-                  <button className="bg-blue-600 text-white py-2 px-4 rounded-lg flex items-center space-x-2">
-                    <FontAwesomeIcon icon={faFacebook} className="text-white text-xl" />
-                    <span>Login com Facebook</span>
+                <p className="mt-4 text-center">
+                  <button
+                    onClick={() => { setIsLoginModalOpen(false); setIsRegisterModalOpen(true); }}
+                    className="text-black underline"
+                  >
+                    Criar conta
                   </button>
-                  <button className="bg-red-600 text-white py-2 px-4 rounded-lg flex items-center space-x-2">
-                    <FontAwesomeIcon icon={faGoogle} className="text-white text-xl" />
-                    <span>Login com Google</span>
+                </p>
+                {/* Botão de login social */}
+                <div className="flex flex-col space-y-2 mt-4">
+                  <button className="flex items-center justify-center bg-white text-black border border-gray-300 rounded-lg py-2 px-4 w-full">
+                    <FontAwesomeIcon icon={faGoogle} className="text-xl mr-2 text-black" />
+                    <span>Entrar com sua conta Google</span>
                   </button>
                 </div>
-              </p>
+              </form>
             </div>
           </div>
         )}
@@ -183,11 +219,17 @@ export default function Header() {
                   />
                 </svg>
               </button>
-              <h2 className="text-xl font-bold mb-4">Criar Conta</h2>
-              <form>
+              <h2 className="text-xl font-bold mb-4">Cadastre-se</h2>
+              <p className="text-center mb-4">Compre mais rápido e acompanhe seu pedido em um só lugar!</p>
+              <form onSubmit={handleRegisterSubmit}>
                 <input
                   type="text"
                   placeholder="Nome completo"
+                  className="border border-gray-300 rounded-lg p-2 w-full mb-4"
+                />
+                <input
+                  type="email"
+                  placeholder="E-mail"
                   className="border border-gray-300 rounded-lg p-2 w-full mb-4"
                 />
                 <input
@@ -195,47 +237,82 @@ export default function Header() {
                   placeholder="Telefone"
                   className="border border-gray-300 rounded-lg p-2 w-full mb-4"
                 />
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="border border-gray-300 rounded-lg p-2 w-full mb-4"
-                />
-                <input
-                  type="password"
-                  placeholder="Senha"
-                  className="border border-gray-300 rounded-lg p-2 w-full mb-4"
-                />
+                <div className="relative mb-4">
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Senha"
+                    className="border border-gray-300 rounded-lg p-2 w-full"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2"
+                  >
+                    <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} className="text-gray-500" />
+                  </button>
+                </div>
+                <div className="relative mb-4">
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Confirmar senha"
+                    className="border border-gray-300 rounded-lg p-2 w-full"
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2"
+                  >
+                    <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} className="text-gray-500" />
+                  </button>
+                </div>
+                <div className="mb-4">
+                  <ReCAPTCHA
+                    sitekey={RECAPTCHA_SITE_KEY}
+                    onChange={(token) => setRecaptchaToken(token)}
+                  />
+                </div>
                 <button type="submit" className="bg-yellow-400 text-white rounded-lg p-2 w-full">
-                  Registrar
+                  Cadastre-se
                 </button>
+                <p className="mt-4 text-center">
+                  <button
+                    onClick={() => { setIsRegisterModalOpen(false); setIsLoginModalOpen(true); }}
+                    className="text-black underline"
+                  >
+                    Já possui uma conta? Inicie sua sessão aqui.
+                  </button>
+                </p>
               </form>
             </div>
           </div>
         )}
 
-        {/* Cart */}
+        {/* Cart Drawer */}
         {isCartOpen && (
-          <div className="fixed top-0 right-0 h-full bg-white shadow-lg w-80 z-50 transition-transform duration-300 ease-in-out transform translate-x-0">
-            <button onClick={closeCart} className="absolute top-2 right-2 text-gray-500 hover:text-gray-800">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-            <div className="p-6">
+          <div className="fixed right-0 top-0 h-full w-80 bg-white shadow-lg z-50 transition-transform duration-300 ease-in-out transform translate-x-0">
+            <div className="p-4">
+              <button onClick={closeCart} className="absolute top-2 right-2 text-gray-500 hover:text-gray-800">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
               <h2 className="text-xl font-bold mb-4">Carrinho</h2>
-              {/* Aqui você pode mapear os itens do carrinho */}
-              <div className="space-y-4">
+              <div>
                 <div className="border-b pb-4">
                   <p className="font-bold">Produto 1</p>
                   <p className="text-gray-600">Descrição do produto 1</p>

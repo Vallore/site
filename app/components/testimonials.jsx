@@ -79,9 +79,7 @@ export default function Testimonials() {
       </div>
 
       <button
-        className="bg-yellow-400 px-12 py-3 mt-8 font-bold"
-        style={{ color: "#A67212" }}
-      >
+        className="bg-yellow-400 px-12 py-3 mt-8 font-bold text-yellow-700 hover:bg-yellow-600 hover:text-white rounded-lg">
         CONFIRA MAIS DEPOIMENTOS
       </button>
     </div>

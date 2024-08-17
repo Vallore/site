@@ -72,7 +72,7 @@ export default function Footer() {
       </div>
 
       <footer>
-        <div className="shadow-lg h-px bg-gray-300 mb-8"></div>
+        <div className="shadow-lg h-px bg-gray-300 mb-10"></div>
         <div className="container mx-auto text-center">
           <p className="text-sm mb-4 font-semibold">
             Copyright (c) 2024 - Vallore Joias e Semijoias de Luxo. Todos os
@@ -82,7 +82,7 @@ export default function Footer() {
             Semijoias de Luxo - CNPJ: 00.000.000/0000-00 - Endereço da loja
             física, nº 000, Centro - São Lourenço/MG
           </p>
-          <span className="font-bold">Desenvolvido por Rixxer Corp</span>
+          <a href="https://www.rixxer.com.br/" target="blank_" className="font-bold decoration-none pb-10">Desenvolvido por Rixxer Corp</a>
         </div>
       </footer>
     </>

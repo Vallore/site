@@ -14,7 +14,7 @@ export default function Info() {
       alt="Imagem de uma mulher usando joias Vallore, como brinco e colar"
       className="w-full object-cover border-t-2 border-b-2 border-yellow-400 mb-32" // Ajusta a margem inferior para dar mais espaço
     />
-    <div className="absolute bottom-[-80px] left-0 right-0 bg-yellow-500 text-white py-4 px-6 flex justify-around space-x-4 max-w-6xl mx-auto">
+    <div className="absolute bottom-[-80px] left-0 right-0 bg-yellow-500 text-white py-4 px-12 flex justify-around space-x-4 max-w-6xl mx-auto">
       <div className="flex items-center space-x-2">
         <FontAwesomeIcon icon={faGem} className="text-4xl" />
         <div>

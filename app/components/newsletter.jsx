@@ -76,7 +76,7 @@ export default function Newsletter() {
 
             <button
               type="submit"
-              className="bg-yellow-400 text-yellow-700 font-bold px-12 py-2 hover:bg-yellow-600 mt-4 hover:text-white"
+              className="bg-yellow-400 text-yellow-700 font-bold px-12 py-2 hover:bg-yellow-600 mt-4 hover:text-white rounded-lg"
             >
               QUERO ME CADASTRAR NA LISTA VIP!
             </button>
