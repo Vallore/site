@@ -136,7 +136,7 @@ export default function Header() {
         {/* Login Modal */}
         {isLoginModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out">
-            <div className="bg-yellow-300 bg-opacity-90 rounded-lg shadow-lg p-6 w-full max-w-md relative">
+            <div className="bg-yellow-300 bg-opacity-90 rounded-lg shadow-lg p-20 w-full max-w-xl relative">
               <button onClick={closeLoginModal} className="absolute top-2 right-2 text-gray-500 hover:text-gray-800">
                 <svg
                   className="w-6 h-6"
@@ -160,7 +160,7 @@ export default function Header() {
                   placeholder="Ex.: exemplo@mail.com"
                   className="border border-gray-300 rounded-lg p-2 w-full mb-4"
                 />
-                <div className="relative mb-4">
+                <div className="relative mb-2">
                   <input
                     type={showPassword ? "text" : "password"}
                     placeholder="Sua senha"
@@ -176,20 +176,27 @@ export default function Header() {
                     <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} className="text-gray-500" />
                   </button>
                 </div>
-                <button type="submit" className="bg-yellow-400 text-white rounded-lg p-2 w-full">
-                  Entrar
-                </button>
-                <p className="mt-4 text-center">
+                <p className="mb-5 text-center">
+                   <button className="text-black text-2xs">
+                   Esqueci minha senha!
+                  </button>
+                </p>
+                <div className="text-center">
+                  <button type="submit" className="bg-yellow-800 text-white rounded-lg p-4 w-32">
+                   ENTRAR
+                  </button>
+                </div>
+                <p className="mt-5 text-center">
                   <button
                     onClick={() => { setIsLoginModalOpen(false); setIsRegisterModalOpen(true); }}
-                    className="text-black underline"
+                    className="text-black font-bold"
                   >
-                    Criar conta
+                    Não tem conta? Cadastre-se aqui!
                   </button>
                 </p>
                 {/* Botão de login social */}
-                <div className="flex flex-col space-y-2 mt-4">
-                  <button className="flex items-center justify-center bg-white text-black border border-gray-300 rounded-lg py-2 px-4 w-full">
+                <div className="flex flex-col space-y-2 mt-4 border-t border-black pt-4">
+                  <button className="flex items-center justify-center bg-white text-black border border-gray-300 rounded-lg py-2 px-4 w-full ">
                     <FontAwesomeIcon icon={faGoogle} className="text-xl mr-2 text-black" />
                     <span>Entrar com sua conta Google</span>
                   </button>
@@ -202,7 +209,7 @@ export default function Header() {
         {/* Register Modal */}
         {isRegisterModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out">
-            <div className="bg-yellow-300 bg-opacity-90 rounded-lg shadow-lg p-6 w-full max-w-md relative">
+            <div className="bg-yellow-300 bg-opacity-90 rounded-lg shadow-lg p-20 w-full max-w-3xl relative">
               <button onClick={closeRegisterModal} className="absolute top-2 right-2 text-gray-500 hover:text-gray-800">
                 <svg
                   className="w-6 h-6"
@@ -219,7 +226,7 @@ export default function Header() {
                   />
                 </svg>
               </button>
-              <h2 className="text-xl font-bold mb-4">Cadastre-se</h2>
+              <h2 className="text-xl font-bold mb-4 text-center">Cadastre-se</h2>
               <p className="text-center mb-4">Compre mais rápido e acompanhe seu pedido em um só lugar!</p>
               <form onSubmit={handleRegisterSubmit}>
                 <input
@@ -275,13 +282,16 @@ export default function Header() {
                     onChange={(token) => setRecaptchaToken(token)}
                   />
                 </div>
-                <button type="submit" className="bg-yellow-400 text-white rounded-lg p-2 w-full text-center">
-                  Cadastre-se
-                </button>
-                <p className="mt-4 text-center">
+                <div className="text-center">
+                  <button type="submit" className="bg-yellow-800 text-white rounded-lg p-4 w-40">
+                  CADASTRE-SE
+                  </button>
+                </div>
+              
+                <p className="mt-4 text-center font-bold">
                   <button
                     onClick={() => { setIsRegisterModalOpen(false); setIsLoginModalOpen(true); }}
-                    className="text-black underline"
+                    className="text-black"
                   >
                     Já possui uma conta? Inicie sua sessão aqui.
                   </button>
