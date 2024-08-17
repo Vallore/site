@@ -270,7 +270,7 @@ export default function Header() {
                   </button>
                 </div>
                 <div className="mb-4">
-                  <ReCAPTCHA
+                  <ReCAPTCHA className="flex justify-center"
                     sitekey={RECAPTCHA_SITE_KEY}
                     onChange={(token) => setRecaptchaToken(token)}
                   />
