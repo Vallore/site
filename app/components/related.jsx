@@ -51,12 +51,12 @@ export default function Casting() {
         </p>
 
         <div className="flex gap-4">
-          <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+          <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 hover:text-yellow-800 text-white py-2.5 px-4 rounded-lg font-bold">
             <FontAwesomeIcon icon={faShoppingBag} className="mr-2 text-white" />
             COMPRAR
           </button>
 
-          <button className="flex items-center justify-center border border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+          <button className="flex items-center justify-center border border-yellow-800 text-xs hover:bg-yellow-600 hover:text-white hover:border-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
             <FontAwesomeIcon icon={faHeart} className="mr-2" />
             FAVORITAR
           </button>
@@ -103,12 +103,12 @@ export default function Casting() {
         </p>
 
         <div className="flex gap-4">
-          <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+          <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 hover:text-yellow-800 text-white py-2.5 px-4 rounded-lg font-bold">
             <FontAwesomeIcon icon={faShoppingBag} className="mr-2 text-white" />
             COMPRAR
           </button>
 
-          <button className="flex items-center justify-center border border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+          <button className="flex items-center justify-center border border-yellow-800 text-xs hover:bg-yellow-600 hover:text-white hover:border-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
             <FontAwesomeIcon icon={faHeart} className="mr-2" />
             FAVORITAR
           </button>
@@ -155,12 +155,12 @@ export default function Casting() {
         </p>
 
         <div className="flex gap-4">
-          <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+          <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 hover:text-yellow-800 text-white py-2.5 px-4 rounded-lg font-bold">
             <FontAwesomeIcon icon={faShoppingBag} className="mr-2 text-white" />
             COMPRAR
           </button>
 
-          <button className="flex items-center justify-center border border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+          <button className="flex items-center justify-center border border-yellow-800 text-xs hover:bg-yellow-600 hover:text-white hover:border-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
             <FontAwesomeIcon icon={faHeart} className="mr-2" />
             FAVORITAR
           </button>
@@ -207,12 +207,12 @@ export default function Casting() {
         </p>
 
         <div className="flex gap-4">
-          <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
+          <button className="flex items-center justify-center bg-yellow-500 text-xs hover:bg-yellow-600 hover:text-yellow-800 text-white py-2.5 px-4 rounded-lg font-bold">
             <FontAwesomeIcon icon={faShoppingBag} className="mr-2 text-white" />
             COMPRAR
           </button>
 
-          <button className="flex items-center justify-center border border-yellow-300 text-xs hover:bg-gray-100 text-yellow-300 py-2.5 px-4 rounded-lg font-bold">
+          <button className="flex items-center justify-center border border-yellow-800 text-xs hover:bg-yellow-600 hover:text-white hover:border-yellow-600 text-yellow-800 py-2.5 px-4 rounded-lg font-bold">
             <FontAwesomeIcon icon={faHeart} className="mr-2" />
             FAVORITAR
           </button>

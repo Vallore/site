@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import Related from "../components/related";
 
 export default function Products() {
+  
   return (
     <>
       <Warning />

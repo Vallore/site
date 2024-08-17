@@ -13,7 +13,7 @@ export default function Footer() {
               <br />
               Formas de pagamento
               <br />
-              Política de privacidade
+              <a href="app/footer/privacy.js">Política de privacidade</a> 
               <br />
               Cuidados com suas semijoias
               <br />
@@ -21,9 +21,9 @@ export default function Footer() {
               <br />
               Como comprar no atacado
               <br />
-              Troca e devolução
+              <a href="app/footer/return.js">Troca e devolução</a>
               <br />
-              Frete e prazo de entrega
+              <a href="app/footer/delivery.js">Frete e prazo de entrega</a>
               <br />
               Acompanhe seu pedido
             </p>

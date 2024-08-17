@@ -17,7 +17,7 @@ export default function Social() {
             <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
           </span>
           <p className="text-lg text-gray-700">
-            Curta nossa página no <br /> <strong>FACEBOOK</strong>
+            Curta nossa página no <br /> <a href="#"><strong>FACEBOOK</strong></a>
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export default function Social() {
             <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
           </span>
           <p className="text-lg text-gray-700">
-            Siga nosso perfil no <br /> <strong>INSTAGRAM</strong>
+            Siga nosso perfil no <br /> <a href="#"><strong>INSTAGRAM</strong></a>
           </p>
         </div>
       </div>
