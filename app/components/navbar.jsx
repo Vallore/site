@@ -11,7 +11,7 @@ export default function Navbar() {
           <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Lançamentos
           </button>
-          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+          <div className="absolute top-full left-0 mt-2 bg-white shadow-lg min-w-[160px] z-10 opacity-0 translate-y-2 scale-95 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100">
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Ver todos</a>
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Novidades</a>
           </div>
@@ -19,10 +19,10 @@ export default function Navbar() {
 
         {/* Dropdown Item */}
         <div className="relative inline-block group">
-          <button className="py-3 px-4 text-lg font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
+          <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Brincos
           </button>
-          <div className="absolute hidden mt-2 bg-white shadow-xl min-w-[160px] z-10 group-hover:block">
+          <div className="absolute top-full left-0 mt-2 bg-white shadow-lg min-w-[160px] z-10 opacity-0 translate-y-2 scale-95 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100">
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Argolas</a>
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Pendentes</a>
           </div>
@@ -33,7 +33,7 @@ export default function Navbar() {
           <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Anéis
           </button>
-          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+          <div className="absolute top-full left-0 mt-2 bg-white shadow-lg min-w-[160px] z-10 opacity-0 translate-y-2 scale-95 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100">
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Solitários</a>
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Aparadores</a>
           </div>
@@ -44,7 +44,7 @@ export default function Navbar() {
           <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Colares
           </button>
-          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+          <div className="absolute top-full left-0 mt-2 bg-white shadow-lg min-w-[160px] z-10 opacity-0 translate-y-2 scale-95 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100">
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Chokers</a>
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Longos</a>
           </div>
@@ -55,7 +55,7 @@ export default function Navbar() {
           <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Pulseiras
           </button>
-          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+          <div className="absolute top-full left-0 mt-2 bg-white shadow-lg min-w-[160px] z-10 opacity-0 translate-y-2 scale-95 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100">
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Pulseiras de Prata</a>
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Pulseiras de Ouro</a>
           </div>
@@ -66,7 +66,7 @@ export default function Navbar() {
           <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             Conjuntos
           </button>
-          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+          <div className="absolute top-full left-0 mt-2 bg-white shadow-lg min-w-[160px] z-10 opacity-0 translate-y-2 scale-95 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100">
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Conjuntos de Pedras</a>
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Conjuntos de Diamantes</a>
           </div>
@@ -77,7 +77,7 @@ export default function Navbar() {
           <button className="py-3 px-4 text-xl font-bold uppercase text-center text-gray-800 hover:text-gray-600 bg-transparent border-none cursor-pointer">
             +Categorias
           </button>
-          <div className="absolute hidden mt-2 bg-white shadow-lg min-w-[160px] z-10 group-hover:block">
+          <div className="absolute top-full left-0 mt-2 bg-white shadow-lg min-w-[160px] z-10 opacity-0 translate-y-2 scale-95 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100">
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Categorias Extras 1</a>
             <a href="#" className="block px-4 py-2 text-lg text-gray-800 hover:bg-gray-100">Categorias Extras 2</a>
           </div>
