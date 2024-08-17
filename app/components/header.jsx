@@ -275,7 +275,7 @@ export default function Header() {
                     onChange={(token) => setRecaptchaToken(token)}
                   />
                 </div>
-                <button type="submit" className="bg-yellow-400 text-white rounded-lg p-2 w-full">
+                <button type="submit" className="bg-yellow-400 text-white rounded-lg p-2 w-full text-center">
                   Cadastre-se
                 </button>
                 <p className="mt-4 text-center">
