@@ -21,7 +21,7 @@ export default function Footer() {
               <br />
               Como comprar no atacado
               <br />
-              <a href="app/footer/return.js">Troca e devolução</a>
+              <a href="app/footer/privacy.js">Troca e devolução</a>
               <br />
               <a href="app/footer/delivery.js">Frete e prazo de entrega</a>
               <br />

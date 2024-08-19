@@ -1,4 +1,4 @@
-export default function Return() {
+export default function Privacy() {
   
   return (
     <>

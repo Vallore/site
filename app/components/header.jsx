@@ -1,7 +1,8 @@
 'use client';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp, faPhoneAlt, faSearch, faUser, faShoppingBag, faGoogle, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { faPhoneAlt, faSearch, faUser, faShoppingBag, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 
