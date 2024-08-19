@@ -13,7 +13,7 @@ export default function Products() {
       <Warning />
       <Header />
       <Navbar />
-      <Return />
+      <Privacy />
 
 
       <Related />
